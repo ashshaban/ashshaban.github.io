@@ -4,20 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Mohamed Shaban | moshaban.me - بنبني المستقبل بأدوات الثورة الصناعية
-      الرابعة
+      Mohamed Shaban El-Atmani | moshaban.me - بنبني المستقبل بأدوات الثورة
+      الصناعية الرابعة
     </title>
 
     <!-- SEO Meta Tags -->
     <meta
       name="description"
-      content="محمد شعبان - سياسي تقني ومهندس حلول رقمية. كادر شبابي مهتم بالعمل العام والسياسات الرقمية. مؤسس RobovAI.tech"
+      content="محمد شعبان العتماني | Mohamed Shaban El-Atmani - سياسي تقني ومهندس حلول رقمية. كادر شبابي مهتم بالعمل العام والسياسات الرقمية. مؤسس RobovAI"
     />
     <meta
       name="keywords"
-      content="Mohamed Shaban, محمد شعبان, الثورة الصناعية الرابعة, التحول الرقمي, سياسي تقني, RobovAI, Digital Transformation"
+      content="Mohamed Shaban El-Atmani, محمد شعبان العتماني, RobovAI, RoboVAISolutions, التحول الرقمي, الذكاء الاصطناعي, الثورة الصناعية الرابعة, Digital Transformation"
     />
-    <meta name="author" content="Mohamed Shaban Ibrahim" />
+    <meta name="author" content="Mohamed Shaban El-Atmani" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://moshaban.me/" />
 
@@ -26,14 +26,29 @@
     <meta property="og:url" content="https://moshaban.me/" />
     <meta
       property="og:title"
-      content="Mohamed Shaban | بنبني المستقبل بأدوات الثورة الصناعية الرابعة 🦾"
+      content="Mohamed Shaban El-Atmani | بنبني المستقبل بأدوات الثورة الصناعية الرابعة 🦾"
     />
     <meta
       property="og:description"
-      content="كادر شبابي مهتم بالعمل العام والسياسات الرقمية | سفير التنمية المستدامة 🇪🇬 | مؤسس RobovAI.tech"
+      content="محمد شعبان العتماني | Mohamed Shaban El-Atmani - مؤسس RobovAI وصانع حلول رقمية للتحول الرقمي والذكاء الاصطناعي."
     />
+    <meta property="og:site_name" content="moshaban.me" />
+    <meta property="og:locale" content="ar_EG" />
     <meta
       property="og:image"
+      content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhByFAZWAEQoaFO9nr_E6QVLqIAo8GKI5PolkZu035vcCRX6uwNdAOGBvGfnaCBwlORJROgngSJdFXli8DnQGSJfVPrEYRlxLHhROo8GPDBK0N3EMLYWLfT32TEv4qPNgEHJ8fCLMBvKPO78MjkSFxDUExuk3DQmQhh9K8jCJDq6Iqf_hmnJsa801Gq1paW/s1600/504895041_3964057297242101_5019402264860843098_n%20%281%29.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Mohamed Shaban El-Atmani | بنبني المستقبل بأدوات الثورة الصناعية الرابعة 🦾"
+    />
+    <meta
+      name="twitter:description"
+      content="محمد شعبان العتماني | Mohamed Shaban El-Atmani - مؤسس RobovAI وصانع حلول رقمية للتحول الرقمي والذكاء الاصطناعي."
+    />
+    <meta
+      name="twitter:image"
       content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhByFAZWAEQoaFO9nr_E6QVLqIAo8GKI5PolkZu035vcCRX6uwNdAOGBvGfnaCBwlORJROgngSJdFXli8DnQGSJfVPrEYRlxLHhROo8GPDBK0N3EMLYWLfT32TEv4qPNgEHJ8fCLMBvKPO78MjkSFxDUExuk3DQmQhh9K8jCJDq6Iqf_hmnJsa801Gq1paW/s1600/504895041_3964057297242101_5019402264860843098_n%20%281%29.jpg"
     />
 
@@ -1291,6 +1306,53 @@
         color: var(--primary);
       }
 
+      .footer-social-sections {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(260px, 1fr));
+        gap: 25px;
+        margin-top: 20px;
+      }
+
+      .footer-social-section {
+        background: rgba(255, 255, 255, 0.02);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 18px;
+      }
+
+      .footer-social-title {
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        color: var(--light);
+      }
+
+      .footer-social-icons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .footer-social-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.08);
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--light);
+        text-decoration: none;
+        transition: all 0.3s;
+      }
+
+      .footer-social-icon:hover {
+        transform: translateY(-3px);
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+
       /* ========== RESPONSIVE ========== */
       @media (max-width: 1024px) {
         .hero-grid,
@@ -1384,6 +1446,9 @@
           flex-direction: column;
           text-align: center;
         }
+        .footer-social-sections {
+          grid-template-columns: 1fr;
+        }
       }
     </style>
   </head>
@@ -1415,10 +1480,10 @@
           <div class="hero-content" data-aos="fade-up">
             <div class="hero-badge">
               <i class="fas fa-certificate"></i>
-              Mohamed Shaban - Founder
+              Mohamed Shaban El-Atmani - Founder
             </div>
             <h1 class="hero-title">
-              م. محمد شعبان<br />
+              محمد شعبان العتماني<br />
               <span class="gradient-text">مهندس حلول رقمية وكادر شبابي 🇪🇬</span>
             </h1>
             <p class="hero-description">
@@ -1460,7 +1525,7 @@
           <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhByFAZWAEQoaFO9nr_E6QVLqIAo8GKI5PolkZu035vcCRX6uwNdAOGBvGfnaCBwlORJROgngSJdFXli8DnQGSJfVPrEYRlxLHhROo8GPDBK0N3EMLYWLfT32TEv4qPNgEHJ8fCLMBvKPO78MjkSFxDUExuk3DQmQhh9K8jCJDq6Iqf_hmnJsa801Gq1paW/s1600/504895041_3964057297242101_5019402264860843098_n%20%281%29.jpg"
-              alt="Mohamed Shaban"
+              alt="Mohamed Shaban El-Atmani"
             />
           </div>
         </div>
@@ -1474,7 +1539,7 @@
           <div class="about-image-wrapper" data-aos="fade-right">
             <img
               src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBuefL6IUnYfw-kwh_Gk70VXLrpCoqPHP7xMBNw8d5xSEM_UhyphenhyphenpbJTIlL4-Yu3S_Xc8SXJbjzfhhjXahaSspEkQY8MS2LyC3eqbofEuZE0dAAUHo21AyBS0FYzY_0vi_KVzvKvjp1QIQGs64P-V6e4aAX-xy79Ny9P7nz7MQQHOW0YzFZLonj16dDFxh56/s1600/606381728_4170805289900633_2026609396409243936_n%20%282%29.jpg"
-              alt="Mohamed Shaban Achievements"
+              alt="Mohamed Shaban El-Atmani Achievements"
               class="about-image"
             />
             <div class="about-badge">
@@ -1484,6 +1549,10 @@
           </div>
           <div class="about-content" data-aos="fade-left">
             <h2>عني <span class="gradient-text">في سطور</span></h2>
+            <p class="about-text">
+              <strong>الاسم الرسمي:</strong> محمد شعبان العتماني | Mohamed Shaban
+              El-Atmani
+            </p>
 
             <p class="about-text">
               🧠 الخلفية التقنية: مهندس ميكاترونكس متخصص في دمج حلول الذكاء الاصطناعي (AI) مع تقنيات الثورة الصناعية الرابعة (Industry 4.0)، مع خبرة عملية واسعة في إدارة المنتجات التقنية وقيادة عمليات التحول الرقمي للمؤسسات.
@@ -1518,7 +1587,7 @@
     <div class="about-divider" id="aboutDivider" aria-hidden="true">
       <img
         src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBuefL6IUnYfw-kwh_Gk70VXLrpCoqPHP7xMBNw8d5xSEM_UhyphenhyphenpbJTIlL4-Yu3S_Xc8SXJbjzfhhjXahaSspEkQY8MS2LyC3eqbofEuZE0dAAUHo21AyBS0FYzY_0vi_KVzvKvjp1QIQGs64P-V6e4aAX-xy79Ny9P7nz7MQQHOW0YzFZLonj16dDFxh56/s1600/606381728_4170805289900633_2026609396409243936_n%20%282%29.jpg"
-        alt="Mohamed Shaban Achievements"
+        alt="Mohamed Shaban El-Atmani Achievements"
         loading="lazy"
       />
     </div>
@@ -2693,7 +2762,7 @@
                 </div>
               </a>
               <a
-                href="https://linkedin.com/in/mohamedshabanai"
+                href="https://linkedin.com/in/msalatmani"
                 class="contact-method"
               >
                 <div
@@ -2704,38 +2773,47 @@
                 </div>
                 <div class="contact-method-text">
                   <h4>LinkedIn</h4>
-                  <p>@mohamedshabanai</p>
+                  <p>@msalatmani</p>
                 </div>
               </a>
             </div>
 
             <div class="contact-social">
               <a
-                href="https://github.com/m0shaban"
-                class="social-link"
-                target="_blank"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://linkedin.com/in/mohamedshabanai"
+                href="https://linkedin.com/in/msalatmani"
                 class="social-link"
                 target="_blank"
                 ><i class="fab fa-linkedin-in"></i
               ></a>
               <a
-                href="https://wa.me/201121891913"
+                href="https://x.com/msalatmani"
                 class="social-link"
                 target="_blank"
-                ><i class="fab fa-whatsapp"></i
-              ></a>
-              <a href="https://robovai.tech" class="social-link" target="_blank"
-                ><i class="fas fa-globe"></i
+                ><i class="fab fa-x-twitter"></i
               ></a>
               <a
-                href="https://tahyamisryu.com"
+                href="https://facebook.com/msalatmani"
                 class="social-link"
                 target="_blank"
-                ><i class="fas fa-users"></i
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://instagram.com/msalatmani"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://youtube.com/@msalatmani"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-youtube"></i
+              ></a>
+              <a
+                href="https://tiktok.com/@msalatmani"
+                class="social-link"
+                target="_blank"
+                ><i class="fab fa-tiktok"></i
               ></a>
             </div>
           </div>
@@ -2835,86 +2913,111 @@
         <div class="footer-content">
           <div class="footer-logo">moshaban.me</div>
           <p class="footer-text">
-            &copy; 2025 Mohamed Shaban. بنبني المستقبل بأدوات الثورة الصناعية
-            الرابعة 🦾
+            &copy; 2025 Mohamed Shaban El-Atmani | محمد شعبان العتماني. بنبني
+            المستقبل بأدوات الثورة الصناعية الرابعة 🦾
           </p>
           <div class="footer-links">
             <a href="https://robovai.tech" target="_blank">RobovAI</a>
             <a href="https://tahyamisryu.com" target="_blank">تحيا مصر</a>
             <a href="#contact">تواصل</a>
           </div>
-          <!-- Social Icons in Footer -->
-          <div
-            style="
-              margin-top: 20px;
-              display: flex;
-              gap: 15px;
-              justify-content: center;
-            "
-          >
-            <a
-              href="https://github.com/m0shaban"
-              target="_blank"
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: rgba(255, 255, 255, 0.1);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--light);
-                transition: all 0.3s;
-              "
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="https://linkedin.com/in/mohamedshabanai"
-              target="_blank"
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: rgba(0, 119, 181, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #0077b5;
-                transition: all 0.3s;
-              "
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              href="https://wa.me/201121891913"
-              target="_blank"
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: rgba(37, 211, 102, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: #25d366;
-                transition: all 0.3s;
-              "
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-            <a
-              href="mailto:eng.mohamed0shaban@gmail.com"
-              style="
-                width: 40px;
-                height: 40px;
-                border-radius: 50%;
-                background: rgba(255, 0, 85, 0.2);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: var(--accent);
-                transition: all 0.3s;
-              "
-              ><i class="fas fa-envelope"></i
-            ></a>
+          <div class="footer-social-sections">
+            <div class="footer-social-section">
+              <h4 class="footer-social-title">الحسابات الشخصية (@msalatmani)</h4>
+              <div class="footer-social-icons">
+                <a
+                  href="https://linkedin.com/in/msalatmani"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="Personal LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://x.com/msalatmani"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="Personal X"
+                  ><i class="fab fa-x-twitter"></i
+                ></a>
+                <a
+                  href="https://facebook.com/msalatmani"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="Personal Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/msalatmani"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="Personal Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://youtube.com/@msalatmani"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="Personal YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  href="https://tiktok.com/@msalatmani"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="Personal TikTok"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+              </div>
+            </div>
+            <div class="footer-social-section">
+              <h4 class="footer-social-title">
+                حسابات RobovAI الرسمية (@RoboVAISolutions)
+              </h4>
+              <div class="footer-social-icons">
+                <a
+                  href="https://linkedin.com/company/robovaisolutions"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="RobovAI LinkedIn"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://x.com/RoboVAISolutions"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="RobovAI X"
+                  ><i class="fab fa-x-twitter"></i
+                ></a>
+                <a
+                  href="https://facebook.com/RoboVAISolutions"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="RobovAI Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <a
+                  href="https://instagram.com/RoboVAISolutions"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="RobovAI Instagram"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://youtube.com/@RoboVAISolutions"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="RobovAI YouTube"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a
+                  href="https://tiktok.com/@RoboVAISolutions"
+                  target="_blank"
+                  class="footer-social-icon"
+                  aria-label="RobovAI TikTok"
+                  ><i class="fab fa-tiktok"></i
+                ></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
