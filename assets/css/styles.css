@@ -27,10 +27,9 @@
   box-sizing: border-box;
 }
 
-*, *::before, *::after {
-  transition-property: background-color, border-color, color, opacity, transform, box-shadow;
-  transition-duration: 0.25s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+/* Removed global transition to fix AOS scroll animations */
+.btn, .card, a, .exp-card, .case-card, .gallery-item, .contact-method, .social-link {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html, body {
@@ -85,7 +84,7 @@ a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
 
 .container { width: min(1200px, 92%); margin: 0 auto; }
-.section { padding: 96px 0; position: relative; }
+.section { padding: 60px 0; position: relative; }
 .section-alt { background: linear-gradient(180deg, rgba(255, 255, 255, 0.015) 0%, rgba(255, 255, 255, 0) 100%); }
 
 .gradient-text {
