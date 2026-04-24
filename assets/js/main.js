@@ -139,20 +139,6 @@ if (contactForm) {
       context: 'contact_form',
       interest: interestValue,
     });
-
-    if (actionUrl.includes('your-form-id')) {
-      event.preventDefault();
-      if (formStatus) {
-        formStatus.textContent =
-          'Contact form is not active yet. Use email or WhatsApp until the Formspree ID is configured.';
-        formStatus.classList.add('is-error');
-      }
-
-      trackEvent('contact_form_blocked_missing_form_id', {
-        context: 'contact_form',
-        interest: interestValue,
-      });
-    }
   });
 }
 
