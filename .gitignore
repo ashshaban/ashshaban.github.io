@@ -1,1 +1,7 @@
 .vercel
+*.bak
+apply_brand_update.py
+*.zip
+.DS_Store
+Thumbs.db
+__pycache__/

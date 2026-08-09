@@ -1,78 +1,70 @@
-# moshaban.me Website
+# Mohamed Shaban — Portfolio & Personal Platform
 
-Static personal brand website for Mohamed Shaban El-Atmani, hosted on GitHub Pages at **https://moshaban.me/**.
+> **Applied AI Engineer & Technical Product Builder**  
+> *Turning complex real-world problems into practical AI-powered products and intelligent software systems.*  
+> **From Problem to Product. From Idea to Production.**
 
-## File Structure
+🌐 **Live Platform**: [https://msalatmani.org](https://msalatmani.org) / [https://moshaban.me](https://moshaban.me)  
+💼 **LinkedIn**: [linkedin.com/in/mohamedshabanalatmani](https://linkedin.com/in/mohamedshabanalatmani)  
+💻 **GitHub**: [github.com/ashshaban](https://github.com/ashshaban)  
+📧 **Email**: [msalatmani@gmail.com](mailto:msalatmani@gmail.com)
+
+---
+
+## 📌 About Mohamed Shaban
+
+Mohamed Shaban is an **Applied AI Engineer and technical product builder** with a background in **Mechatronics Engineering**, software development, and intelligent systems. He specializes in:
+
+- **Applied AI & LLMs**: Production RAG pipelines, autonomous AI agents with tool calling, structured outputs, evaluation, and computer vision.
+- **Software & Backend Engineering**: Clean architecture with Python, FastAPI, PostgreSQL, REST APIs, and Docker containerization.
+- **AI Workflow Automation & Integration**: Process pipelines (n8n, Python middleware, webhook integrations) that connect tools and automate repetitive friction.
+- **End-to-End Product Delivery**: Leading solutions from problem discovery and systems architecture to frontend, backend, deployment, and monitoring.
+
+---
+
+## 📁 Repository Structure
 
 ```
 /
-├── index.html            # Single-page B2B site (no inline styles or scripts)
+├── mohamedshabanalatmani-blogger-theme-master.xml  # Complete, bilingual Blogger XML theme with full brand alignment
+├── blogger-theme-master.xml                      # Base theme distribution file
+├── index.html                                    # Standalone single-page web build
 ├── assets/
-│   ├── css/styles.css    # Complete visual system — design tokens, layout, components, responsive rules
-│   └── js/main.js        # Runtime behavior — AOS init, navbar scroll, mobile menu, tracking, contact form, smooth scroll
-├── sitemap.xml           # Single-URL sitemap for https://moshaban.me/
-├── robots.txt            # Crawl policy referencing sitemap.xml
-├── CNAME                 # Custom domain mapping for GitHub Pages
+│   ├── css/styles.css                            # Modern stylesheet & layout definitions
+│   └── js/main.js                                # Runtime behavior, analytics, & interactions
+├── GITHUB_PROFILE_README.md                      # GitHub Profile README template for @ashshaban
+├── sitemap.xml                                   # SEO sitemap
+├── robots.txt                                    # Search engine crawl policy
+├── CNAME                                         # Custom domain mapping
 └── README.md
 ```
 
-## Implementation: B2B Positioning (Refactored)
+---
 
-The website is positioned to attract CTOs, founders, and business owners seeking operational transformation through AI systems architecture.
+## 🎨 Theme Highlights (`mohamedshabanalatmani-blogger-theme-master.xml`)
 
-### Active Sections
+The Blogger theme is an all-in-one, bilingual (Arabic & English) personal portfolio and blog engine:
 
-- **Hero** — high-impact positioning with dual CTA (`Request a Session` / `Explore Systems`)
-- **About** — manifesto-style engineering philosophy (cyber-physical → AI operations)
-- **Core Capabilities** — 4 outcome-focused pillars
-- **RoboVAI Ecosystem** — founder-led credibility with Nova, Boost, and Control Layer
-- **Why Me** — traditional delivery vs. intelligence architecture contrast
-- **Contact** — operations brief form for business leads + direct contact methods
+1. **Hero Section**: Clean Applied AI positioning, dynamic action CTAs, and live system metrics.
+2. **About Manifesto**: Engineering discipline rooted in Mechatronics transitioning into Applied AI and systems thinking.
+3. **Core Capabilities**: Outcome-focused technical pillars (Applied AI, Backend Engineering, AI Automation, Product Building).
+4. **RoboVAI Venture Hub**: Applied project showcase featuring Nova, Boost, and Control Layer.
+5. **Professional Timeline**: Authentic journey across engineering, institutional development, and tech community leadership.
+6. **Open-Source Architecture**: Direct links to practical microservices and repositories on GitHub.
+7. **Interactive Lightbox, Constellation Canvas & Sound Effects**: Interactive visual experience with zero bloat.
+8. **Automated SEO & Schema.org JSON-LD**: Rich structured data for Google Search and AI indexing.
 
-### Intentionally Removed Legacy Sections
+---
 
-The following sections were **deliberately removed** during the B2B repositioning and are **not accidentally deleted**:
+## 🛠️ Tech Stack
 
-- Gallery / photo showcase (personal branding content, not B2B-relevant)
-- Certifications grid (credential signalling replaced by outcome-focused copy)
-- Public work / teaching content blocks (conflicted with founder-CEO positioning)
+- **Core**: Python, FastAPI, PostgreSQL, SQLite, Redis
+- **AI & ML**: OpenAI API, Anthropic SDK, LangChain/LlamaIndex, Sentence-Transformers, OpenCV
+- **Web & Interface**: HTML5, Vanilla CSS3 / Modern Glassmorphism, JavaScript (ES6+), React / Flutter
+- **DevOps & Cloud**: Docker, Linux, Git / GitHub Actions, Cloudflare / Vercel
 
-**Archive strategy (optional):** A non-linked snapshot of the legacy content can be preserved as `legacy-snapshot.html` for historical reference without affecting the live conversion funnel.
+---
 
-## Required Setup
+## 📄 License
 
-### 1) Activate Formspree
-
-In `index.html`, update the contact form action:
-
-```
-https://formspree.io/f/your-form-id  →  https://formspree.io/f/<real-form-id>
-```
-
-Once updated, form submissions route directly to email.
-
-### 2) Connect Analytics (Optional but Recommended)
-
-All CTAs and form events emit through `trackEvent()` in `assets/js/main.js`.
-
-Supported providers (auto-detected at runtime):
-
-| Provider | Global | Events sent |
-|---|---|---|
-| Google Analytics 4 | `window.gtag` | via `gtag('event', ...)` |
-| Plausible | `window.plausible` | via `plausible(name, { props })` |
-| GTM Data Layer | `window.dataLayer` | via `dataLayer.push(...)` |
-
-Add any provider's snippet before `</body>` and events wire up automatically.
-
-## SEO Files
-
-- **`sitemap.xml`** — valid XML sitemap with `https://moshaban.me/` as the single canonical URL, `priority: 1.0`, `changefreq: monthly`.
-- **`robots.txt`** — allows all crawlers, references sitemap URL.
-
-## Suggested Next Steps
-
-1. Replace Formspree placeholder ID before launch.
-2. Add `application/ld+json` JSON-LD (`Person` + `Organization` schema) to `<head>` for richer search results.
-3. Add dedicated case pages with quantified client outcomes (cost reduction, cycle time, error rate).
-4. Add lightweight social proof signals (selected logos, client quotes, deployment snapshots).
+© 2026 Mohamed Shaban. All rights reserved.
