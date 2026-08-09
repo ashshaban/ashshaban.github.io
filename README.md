@@ -5,7 +5,7 @@
 > **From Problem to Product. From Idea to Production.**
 
 🌐 **Live Platform**: [https://msalatmani.org](https://msalatmani.org) / [https://moshaban.me](https://moshaban.me)  
-💼 **LinkedIn**: [linkedin.com/in/mohamedshabanalatmani](https://linkedin.com/in/mohamedshabanalatmani)  
+💼 **LinkedIn**: [linkedin.com/in/msalatmani](https://www.linkedin.com/in/msalatmani)  
 💻 **GitHub**: [github.com/ashshaban](https://github.com/ashshaban)  
 📧 **Email**: [msalatmani@gmail.com](mailto:msalatmani@gmail.com)
 
