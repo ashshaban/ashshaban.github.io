@@ -3914,6 +3914,72 @@ body {
   }
 }
 
+
+/* ==========================================================================
+   PERFECT UI ANTI-OVERLAP and AUTO-HIDING DOCK ENGINE
+   ========================================================================== */
+
+/* 1. Mobile Protection: Completely disable floating dock on small screens */
+@media (max-width: 900px) {
+  .ios-dock-wrapper {
+    display: none !important;
+  }
+  
+  /* Ensure hero has sufficient top clearance under floating navbar */
+  .hero {
+    padding-top: 96px !important;
+    padding-bottom: 48px !important;
+  }
+  
+  /* Ensure hero image and content have clean vertical stack with no overlapping */
+  .hero-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 24px !important;
+  }
+  
+  .hero-image {
+    order: -1 !important;
+    margin: 0 auto !important;
+    max-width: 280px !important;
+  }
+}
+
+/* 2. Desktop Auto-Hiding Dock (Appears only on scroll, hidden on hero fold) */
+@media (min-width: 901px) {
+  .ios-dock-wrapper {
+    position: fixed !important;
+    bottom: 24px !important;
+    left: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    z-index: 9998 !important;
+    pointer-events: none !important;
+    opacity: 0 !important;
+    transform: translateY(30px) !important;
+    transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1), transform 0.35s cubic-bezier(0.16, 1, 0.3, 1) !important;
+  }
+
+  .ios-dock-wrapper.dock-visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+    pointer-events: auto !important;
+  }
+
+  /* WhatsApp button spacing: Ensure it never overlaps dock */
+  .whatsapp-float {
+    bottom: 26px !important;
+    right: 26px !important;
+    z-index: 9999 !important;
+  }
+}
+
+/* Section Bottom Clearance */
+.section {
+  padding-bottom: 80px !important;
+}
+
 </style>
 
     <!-- Scripts -->
@@ -4759,6 +4825,29 @@ updateClock();
     }, { passive: true });
 
     updateTimelineOrb();
+  }
+})();
+//]]>
+</script>
+
+
+<script>
+//<![CDATA[
+(function() {
+  'use strict';
+  // Auto-hide Dock on Hero, show on scroll past 250px
+  var dock = document.getElementById('iosDock');
+  if (dock) {
+    function checkDockVisibility() {
+      if (window.innerWidth > 900 && window.scrollY > 250) {
+        dock.classList.add('dock-visible');
+      } else {
+        dock.classList.remove('dock-visible');
+      }
+    }
+    window.addEventListener('scroll', checkDockVisibility, { passive: true });
+    window.addEventListener('resize', checkDockVisibility, { passive: true });
+    checkDockVisibility();
   }
 })();
 //]]>
