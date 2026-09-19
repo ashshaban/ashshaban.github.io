@@ -4582,103 +4582,146 @@ iframe.blogger-iframe-colorize {
     </div>
 
     <!-- Professional Experience Section (Timeline) -->
-    
-
-
-
-<section class='section section-alt' id='experience'>
-      <div class='container'>
-        <h2 class='section-title' data-aos='fade-up'>
-          <span class='lang-en'>Professional <span class='gradient-text'>Experience</span></span>
-          <span class='lang-ar'>المسار <span class='gradient-text'>المهني</span></span>
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          <span class="lang-en">Professional <span class="gradient-text">Experience</span></span>
+          <span class="lang-ar">المسار <span class="gradient-text">المهني</span></span>
         </h2>
-        <p class='section-subtitle' data-aos='fade-up' data-aos-delay='100'>
-          <span class='lang-en'>A trajectory connecting mechatronics engineering, software, and applied AI systems</span>
-          <span class='lang-ar'>مسار متكامل يجمع بين الهندسة، تطوير البرمجيات، وأنظمة الذكاء الاصطناعي التطبيقي</span>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          <span class="lang-en">A proven engineering journey across military defense, sovereign ministries, enterprise platforms, and deep-tech products.</span>
+          <span class="lang-ar">مسار هندسي وعملي يجمع بين الخدمة الهندسية العسكرية، والمكاتب الفنية للوزارات، ومنصات الـ AI المتطورة.</span>
         </p>
 
-        <div class='experience-media' data-aos='fade-up' data-aos-delay='150'>
-          <img alt='With Minister of Youth and Sports' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWZz5OrLclzR6MBk-bXn9fo4xyNNfvf7nYRJ6W9mySs8tPeWHSGiRLKv207csQnDXI_aXU1Uy2OvpTA6dB38yEtMCGi3shdt5v7Nay_QL-18mN4JsnSZyvq1oe-Lw-AZ547OJ_3SuEVFhIyoWpeF6eOeBrpXx9f5NFt7NGigMwNC4TomjjxGK3afFc1XVO/s1600/12.png'/>
-          <img alt='With Deputy Minister of Communications' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLpDUzWq2DVZtX1o7Fd3lNEkDzU1LiIJfRnRuo8LeKosBvfRGTu5ofSBKx7G2JBXBjLYS6S4UEnxbICTJHa3FFy4NxzLaE7Yup0X21fCPRMhBumtuOMYD4My1MFYYPNGpiPsEtZGGFW0LNm1nhD5oHHxRVkA7quSHlzpjomPU4usqKpaCFRa72ySZ6_-Ex/s1600/photo_14_2026-01-22_20-53-02.jpg'/>
+        <div class="experience-media" data-aos="fade-up" data-aos-delay="150">
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjWZz5OrLclzR6MBk-bXn9fo4xyNNfvf7nYRJ6W9mySs8tPeWHSGiRLKv207csQnDXI_aXU1Uy2OvpTA6dB38yEtMCGi3shdt5v7Nay_QL-18mN4JsnSZyvq1oe-Lw-AZ547OJ_3SuEVFhIyoWpeF6eOeBrpXx9f5NFt7NGigMwNC4TomjjxGK3afFc1XVO/s1600/12.png"
+            alt="With Minister of Youth and Sports"
+            loading="lazy"/>
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLpDUzWq2DVZtX1o7Fd3lNEkDzU1LiIJfRnRuo8LeKosBvfRGTu5ofSBKx7G2JBXBjLYS6S4UEnxbICTJHa3FFy4NxzLaE7Yup0X21fCPRMhBumtuOMYD4My1MFYYPNGpiPsEtZGGFW0LNm1nhD5oHHxRVkA7quSHlzpjomPU4usqKpaCFRa72ySZ6_-Ex/s1600/photo_14_2026-01-22_20-53-02.jpg"
+            alt="With Deputy Minister of Communications"
+            loading="lazy"/>
         </div>
 
-        <div class='timeline'>
-          <!-- RoboVAI -->
-          <div class='timeline-item' data-aos='fade-up'>
-            <div class='timeline-marker'/>
-            <div class='timeline-content'>
-              <span class='timeline-date'>2024 - Present</span>
-              <h3 class='timeline-title'><span class='lang-en'>Founder &amp; Technical Product Builder</span><span class='lang-ar'>مؤسس ومطور منتجات تقنية</span></h3>
-              <p class='timeline-org'>RoboVAI - Applied AI &amp; Intelligent Solutions</p>
-              <p class='timeline-desc'>
-                <span class='lang-en'>Leading technical product development, architecture, and implementation of Applied AI systems, SaaS prototypes, and intelligent workflow automation pipelines.</span>
-                <span class='lang-ar'>قيادة تطوير المنتجات التقنية، وتصميم وبناء أنظمة الذكاء الاصطناعي التطبيقي، وأدوات الـ SaaS، ومسارات الأتمتة الذكية.</span>
+        <div class="timeline">
+          <!-- 1. Egyptian Air Force -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"/>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2026 &#8212; Sep 2026</div>
+              <h3 class="timeline-title">
+                <span class="lang-en">Air Force Engineer Soldier (National Service)</span>
+                <span class="lang-ar">جندي مهندس &#8212; القوات الجوية المصرية (خدمة وطنية)</span>
+              </h3>
+              <p class="timeline-org">
+                <span class="lang-en">5th Airfield Engineering Battalion, Central Air Zone</span>
+                <span class="lang-ar">الكتيبة الخامسة مهندسي مطارات &#8212; المنطقة الجوية المركزية</span>
               </p>
-              <div class='timeline-tags'>
-                <span class='timeline-tag'>Applied AI</span>
-                <span class='timeline-tag'>Product Engineering</span>
-                <span class='timeline-tag'>Python</span>
-                <span class='timeline-tag'>FastAPI</span>
-                <span class='timeline-tag'>AI Agents</span>
-              </div>
+              <p class="timeline-desc">
+                <span class="lang-en">Served as Secretary to the Battalion Commander; handled executive administrative workflows and supervised central-zone facility engineering and maintenance projects. Engineered and deployed an internal point-of-sale (POS) and inventory management system for unit facilities, digitizing supply-chain tracking and daily records. Awarded official Certificate of Appreciation by Battalion Commander.</span>
+                <span class="lang-ar">أداء الواجب الوطني كسكرتير قائد الكتيبة؛ تولي المهام الإدارية والتنفيذية والإشراف على أعمال الصيانة والمشاريع الهندسية لمرافق المنطقة المركزية. هندسة وبرمجة ونشر نظام نقاط بيع (POS) وإدارة مخازن وإمداد داخلي لرقمنة تتبع العهد والمبيعات اليومية، مع الحصول على شهادة شكر وتقدير رسمية من قائد الكتيبة.</span>
+              </p>
             </div>
           </div>
 
-          <!-- Institutional Development -->
-          <div class='timeline-item' data-aos='fade-up' data-aos-delay='100'>
-            <div class='timeline-marker'/>
-            <div class='timeline-content'>
-              <span class='timeline-date'>2022 - 2024</span>
-              <h3 class='timeline-title'><span class='lang-en'>Researcher &amp; Systems Developer - Institutional Development</span><span class='lang-ar'>باحث ومطور نظم - التطوير المؤسسي</span></h3>
-              <p class='timeline-org'><span class='lang-en'>Ministry of Youth Cadres &amp; Strategic Programs</span><span class='lang-ar'>كوادر وزارة الشباب والبرامج الاستراتيجية</span></p>
-              <p class='timeline-desc'>
-                <span class='lang-en'>Researched digital systems, analyzed operational processes, and helped implement modern software solutions and training frameworks for public initiatives and institutional programs.</span>
-                <span class='lang-ar'>إجراء أبحاث التطوير المؤسسي، تحليل الإجراءات والعمليات، والمساهمة في بناء النظم البرمجية وأطر التدريب التقني للمبادرات والبرامج المؤسسية.</span>
+          <!-- 2. MCIT Researcher -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot"/>
+            <div class="timeline-content">
+              <div class="timeline-date">Jul 2025 &#8212; Dec 2025</div>
+              <h3 class="timeline-title">
+                <span class="lang-en">Technical Researcher &#8212; Institutional Development</span>
+                <span class="lang-ar">باحث تقني &#8212; مكتب مساعد الوزير للتطوير المؤسسي</span>
+              </h3>
+              <p class="timeline-org">
+                <span class="lang-en">Ministry of Communications &amp; Information Technology (MCIT)</span>
+                <span class="lang-ar">وزارة الاتصالات وتكنولوجيا المعلومات</span>
               </p>
-              <div class='timeline-tags'>
-                <span class='timeline-tag'>Systems Analysis</span>
-                <span class='timeline-tag'>Digital Transformation</span>
-                <span class='timeline-tag'>Operations</span>
-              </div>
+              <p class="timeline-desc">
+                <span class="lang-en">Evaluated AI-driven frameworks and streamlined digital workflows across 3+ cross-functional governmental committees, formulating comprehensive technical reports for national digital transformation strategies.</span>
+                <span class="lang-ar">تقييم أطر وأنظمة الذكاء الاصطناعي وهندسة تدفقات العمل الرقمية عبر 3 لجان وزارية مشتركة، وإعداد التقارير الفنية الاستراتيجية لدعم خطط التحول الرقمي الوطني.</span>
+              </p>
             </div>
           </div>
 
-          <!-- AI Engineering & Tech Projects -->
-          <div class='timeline-item' data-aos='fade-up' data-aos-delay='200'>
-            <div class='timeline-marker'/>
-            <div class='timeline-content'>
-              <span class='timeline-date'>2021 - 2023</span>
-              <h3 class='timeline-title'><span class='lang-en'>AI Engineer &amp; Software Solutions Developer</span><span class='lang-ar'>مهندس ذكاء اصطناعي ومطور حلول برمجية</span></h3>
-              <p class='timeline-org'><span class='lang-en'>Technical Projects &amp; Digital Solutions</span><span class='lang-ar'>مشاريع تقنية وحلول رقمية</span></p>
-              <p class='timeline-desc'>
-                <span class='lang-en'>Built computer vision pipelines, backend APIs, and automation scripts. Implemented machine learning models and database integrations for practical real-world applications.</span>
-                <span class='lang-ar'>تطوير نماذج الرؤية الحاسوبية، وبناء واجهات الـ Backend، وبرمجة سكربتات الأتمتة وقواعد البيانات للمشاريع والتطبيقات العملية.</span>
+          <!-- 3. RoboVAI Solutions -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"/>
+            <div class="timeline-content">
+              <div class="timeline-date">2023 &#8212; Present</div>
+              <h3 class="timeline-title">
+                <span class="lang-en">AI &amp; Software Systems Engineer</span>
+                <span class="lang-ar">مهندس أنظمة وبرمجيات الذكاء الاصطناعي</span>
+              </h3>
+              <p class="timeline-org">
+                <span class="lang-en">RoboVAI Solutions</span>
+                <span class="lang-ar">شركة حلول روبوفاي الذكية</span>
               </p>
-              <div class='timeline-tags'>
-                <span class='timeline-tag'>Computer Vision</span>
-                <span class='timeline-tag'>Python</span>
-                <span class='timeline-tag'>APIs</span>
-                <span class='timeline-tag'>Machine Learning</span>
-              </div>
+              <p class="timeline-desc">
+                <span class="lang-en">Authored <code>robovai-ocr</code> v3.0.0 on PyPI powering Smart Parking Operating Systems (SPOS) across Egypt &amp; GCC. Architected RoboVAI Nova multi-agent workflows, RoboVAI Pro POS retail platform, and SecureAI-RAG sovereign offline document intelligence platform (36/36 tests passed).</span>
+                <span class="lang-ar">تطوير ونشر حزمة بايثون الرسمية <code>robovai-ocr</code> لأنظمة مواقف السيارات الذكية (ALPR) وقراءة البطاقات القومية؛ هندسة منصة RoboVAI Nova للوكلاء المؤتمتين، ونظام Pro POS السحابي للمخازن، ونظام SecureAI-RAG الأوفلاين للوثائق السيادية.</span>
+              </p>
             </div>
           </div>
 
-          <!-- Product Operations & Tech Lead -->
-          <div class='timeline-item' data-aos='fade-up' data-aos-delay='300'>
-            <div class='timeline-marker'/>
-            <div class='timeline-content'>
-              <span class='timeline-date'>2020 - 2022</span>
-              <h3 class='timeline-title'><span class='lang-en'>Product Operations &amp; Technical Lead</span><span class='lang-ar'>مسؤول العمليات التقنية وتطوير البرامج</span></h3>
-              <p class='timeline-org'>Techno Egypt Initiative</p>
-              <p class='timeline-desc'>
-                <span class='lang-en'>Co-founded and managed technology training tracks, workshops, and student entrepreneurship competitions, impacting over 2,000 participants across multiple governorates.</span>
-                <span class='lang-ar'>المشاركة في تأسيس وإدارة المسارات التقنية وورش العمل ومسابقات ريادة الأعمال التقنية، وتدريب أكثر من 2000 مشارك في عدة محافظات.</span>
+          <!-- 4. OMC Group -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot"/>
+            <div class="timeline-content">
+              <div class="timeline-date">Jun 2024 &#8212; May 2025</div>
+              <h3 class="timeline-title">
+                <span class="lang-en">Digital Transformation &amp; AI Engineer</span>
+                <span class="lang-ar">مهندس تحول رقمي وذكاء اصطناعي</span>
+              </h3>
+              <p class="timeline-org">
+                <span class="lang-en">OMC Group (عمال مصر الاستثمارية)</span>
+                <span class="lang-ar">مجموعة عمال مصر الاستثمارية</span>
               </p>
-              <div class='timeline-tags'>
-                <span class='timeline-tag'>Technical Leadership</span>
-                <span class='timeline-tag'>Operations</span>
-                <span class='timeline-tag'>EdTech</span>
-              </div>
+              <p class="timeline-desc">
+                <span class="lang-en">Implemented digital transformation across factory operations, HR, and supply chain departments. Integrated automated AI workflows (n8n, Python), reducing process bottlenecks by 30%. Designed and delivered practical automation training for 50+ enterprise personnel.</span>
+                <span class="lang-ar">قيادة مشاريع التحول الرقمي عبر العمليات الصناعية والموارد البشرية وسلاسل الإمداد؛ أتمتة مسارات العمل بالذكاء الاصطناعي (n8n, Python) وخفض زمن الإجراءات بنسبة 30%؛ وتقديم تدريبات عملية على أدوات الذكاء الاصطناعي لأكثر من 50 كادراً بالمصانع والشركات.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 5. Merkato Industrial Platform -->
+          <div class="timeline-item" data-aos="fade-right">
+            <div class="timeline-dot"/>
+            <div class="timeline-content">
+              <div class="timeline-date">Jan 2024 &#8212; Aug 2024</div>
+              <h3 class="timeline-title">
+                <span class="lang-en">Technical Operations Specialist</span>
+                <span class="lang-ar">أخصائي عمليات تقنية</span>
+              </h3>
+              <p class="timeline-org">
+                <span class="lang-en">Merkato Industrial Platform (GESR SaaS Prize Winner)</span>
+                <span class="lang-ar">منصة ميركاتو للتداول الصناعي B2B</span>
+              </p>
+              <p class="timeline-desc">
+                <span class="lang-en">Streamlined B2B platform operations and end-to-end user onboarding workflows, boosting user retention and directly contributing to winning the GESR SaaS Prize (Misr El Kheir &amp; ExxonMobil).</span>
+                <span class="lang-ar">إدارة العمليات التقنية لربط المصانع بموردي قطع الغيار والمعدات عبر المنصة، وتحسين تجربة المستخدم مما أسهم مباشرة في فوز المنصة بالمركز الأول في مسابقة جسر لحلول الـ SaaS.</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- 6. Techno Egypt & Community -->
+          <div class="timeline-item" data-aos="fade-left">
+            <div class="timeline-dot"/>
+            <div class="timeline-content">
+              <div class="timeline-date">2021 &#8212; Present</div>
+              <h3 class="timeline-title">
+                <span class="lang-en">Founder &amp; Technical Empowerment Lead</span>
+                <span class="lang-ar">مؤسس المبادرة ورئيس اتحاد الطلاب</span>
+              </h3>
+              <p class="timeline-org">
+                <span class="lang-en">Techno Egypt Initiative &amp; Engineering Syndicate</span>
+                <span class="lang-ar">مبادرة تكنو مصر ونقابة المهندسين</span>
+              </p>
+              <p class="timeline-desc">
+                <span class="lang-en">Founder of Techno Egypt technical empowerment initiative; former Student Union President; Active Member of Young Engineers Committee and Electronic Engineering Committee (Engineering Syndicate).</span>
+                <span class="lang-ar">مؤسس مبادرة "تكنو مصر" لتمكين الشباب تكنولوجياً؛ رئيس اتحاد طلاب المعهد العالي للهندسة سابقاً؛ عضو نشط بلجنتي الشباب والهندسة الإلكترونية بنقابة المهندسين بالجيزة.</span>
+              </p>
             </div>
           </div>
         </div>
@@ -4940,7 +4983,7 @@ iframe.blogger-iframe-colorize {
 
         <div class="exp-grid">
           <!-- Libyan Shield -->
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/wFn9v7B6/shield-libya.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="100">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-shield-alt"/></div>
               <div>
@@ -4949,13 +4992,15 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Awarded the official Shield of Honor by the Libyan Minister of Labor for orchestrating and delivering the specialized Cybersecurity &amp; IT Capacity-Building Program.</span><span class="lang-ar">درع شكر وتقدير رسمي من وزير العمل والتأهيل الليبي ورئيس مجلس إدارة عمال مصر تقديراً لإدارة وتنفيذ البرنامج التدريبي المتخصص في (الأمن السيبراني وتكنولوجيا المعلومات).</span></p>
-            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
-              <img src="https://i.ibb.co/wFn9v7B6/shield-libya.jpg" alt="Shield of Honor - Libyan Government" style="width: 100%; height: 210px; object-fit: contain; background: #0b0f19; cursor: zoom-in; transition: transform 0.3s ease;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            <div class="exp-card-action" style="margin-top: 15px;">
+              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/wFn9v7B6/shield-libya.jpg')">
+                <i class="fas fa-search-plus"/> <span class="lang-en">View Shield Photo</span><span class="lang-ar">عرض صورة الدرع كاملة</span>
+              </button>
             </div>
           </div>
 
           <!-- Moroccan Shield -->
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="200">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-award"/></div>
               <div>
@@ -4964,13 +5009,15 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Official Shield of Honor and royal crest from the Moroccan Chamber of Commerce for technical innovation, entrepreneurship, and digital transformation contributions.</span><span class="lang-ar">درع التميز والميدالية التذكارية الرسمية للمملكة المغربية من غرفة التجارة والصناعة والخدمات تقديراً للمساهمات في ريادة الأعمال التقنية والابتكار الرقمي.</span></p>
-            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
-              <img src="https://i.ibb.co/V0LRxmXy/shield-morocco.jpg" alt="Shield of Honor - Kingdom of Morocco" style="width: 100%; height: 210px; object-fit: contain; background: #0b0f19; cursor: zoom-in; transition: transform 0.3s ease;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            <div class="exp-card-action" style="margin-top: 15px;">
+              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg')">
+                <i class="fas fa-search-plus"/> <span class="lang-en">View Shield Photo</span><span class="lang-ar">عرض صورة الدرع كاملة</span>
+              </button>
             </div>
           </div>
 
           <!-- Armed Forces / Air Force Recognition -->
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="300">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, #38bdf8, #1d4ed8);"><i class="fas fa-medal"/></div>
               <div>
@@ -4979,14 +5026,32 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Official Certificate of Appreciation from the Air Force Battalion Commander for outstanding performance, high military discipline, and spearheading engineering &amp; IT digitization systems.</span><span class="lang-ar">شهادة تقدير رسمية من قيادة القوات الجوية تقديراً للتفاني والانضباط العسكري العالي والدور البارز في إنجاز المشاريع الهندسية ونظم المعلومات والرقمنة بالكتيبة.</span></p>
-            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5); display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; background: #0b0f19;">
-              <img src="https://i.ibb.co/Xf1jT5YD/army-certificate.jpg" alt="Air Force Appreciation Certificate" style="width: 100%; height: 198px; object-fit: cover; border-radius: 8px; cursor: zoom-in;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
-              <img src="https://i.ibb.co/wNWQzYrS/army-commander-handover.jpg" alt="Award Handover with Battalion Commander" style="width: 100%; height: 198px; object-fit: cover; border-radius: 8px; cursor: zoom-in;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            <div class="exp-card-action" style="margin-top: 15px;">
+              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg')">
+                <i class="fas fa-search-plus"/> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة كاملة</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- ExxonMobil & Misr El Kheir Award -->
+          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="400">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: var(--gradient-accent);"><i class="fas fa-trophy"/></div>
+              <div>
+                <h4 class="exp-card-title"><span class="lang-en">Misr El Kheir &amp; ExxonMobil Award</span><span class="lang-ar">جائزة مصر الخير وExxonMobil</span></h4>
+                <p class="exp-card-org"><span class="lang-en">GESR SaaS Competition Prize Winner</span><span class="lang-ar">مسابقة جسر للابتكار وريادة الأعمال في التطبيقات الإلكترونية</span></p>
+              </div>
+            </div>
+            <p class="exp-card-desc"><span class="lang-en">Winning the official innovation prize for engineering Merkato B2B Industrial Platform, digitizing industrial supply chains and spare parts trading across factories.</span><span class="lang-ar">الفوز بالجائزة الرسمية للابتكار عن تطوير وهندسة منصة Merkato لرقمنة سلاسل التوريد الصناعية وقطع الغيار للمصانع والشركات.</span></p>
+            <div class="exp-card-action" style="margin-top: 15px;">
+              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg')">
+                <i class="fas fa-search-plus"/> <span class="lang-en">View Award Certificate</span><span class="lang-ar">عرض شهادة الجائزة</span>
+              </button>
             </div>
           </div>
 
           <!-- Tahya Misr / Ministry of Youth & Sports Shield -->
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="500">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-star"/></div>
               <div>
@@ -4995,27 +5060,17 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Honored for exceptional impact in community development, national capacity building programs, and empowering students and young engineers across Egyptian universities.</span><span class="lang-ar">درع تكريم رسمي للبصمة المتميزة في العمل العام والتنمية المجتمعية وتدريب وتأهيل شباب المهندسين وطلاب الجامعات المصرية.</span></p>
-            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
-              <img src="https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg" alt="Ministry of Youth and Sports Shield" style="width: 100%; height: 210px; object-fit: contain; background: #0b0f19; cursor: zoom-in; transition: transform 0.3s ease;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            <div class="exp-card-action" style="margin-top: 15px;">
+              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg')">
+                <i class="fas fa-search-plus"/> <span class="lang-en">View Shield Photo</span><span class="lang-ar">عرض صورة الدرع كاملة</span>
+              </button>
             </div>
-          </div>
-
-          <!-- Misr El Kheir & ExxonMobil Award -->
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="500">
-            <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: var(--gradient-accent)"><i class="fas fa-trophy"/></div>
-              <div>
-                <h4 class="exp-card-title"><span class="lang-en">Misr El Kheir &amp; ExxonMobil SaaS Award</span><span class="lang-ar">جائزة مؤسسة مصر الخير وExxonMobil للـ SaaS</span></h4>
-                <p class="exp-card-org"><span class="lang-en">GESR SaaS Competition Prize Winner</span><span class="lang-ar">المركز الأول في مسابقة جسر لحلول الـ SaaS والتحول الرقمي</span></p>
-              </div>
-            </div>
-            <p class="exp-card-desc"><span class="lang-en">Won the official innovation prize for engineering Merkato B2B Industrial Platform, digitizing industrial supply chains and spare parts trading across factories.</span><span class="lang-ar">الفوز بالجائزة الرسمية للابتكار عن تطوير وهندسة منصة Merkato لرقمنة سلاسل التوريد الصناعية وقطع الغيار للمصانع والشركات.</span></p>
           </div>
 
           <!-- Media Speaker -->
-          <div class="exp-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="exp-card" style="background: rgba(15, 23, 42, 0.75);" data-aos="fade-up" data-aos-delay="600">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: var(--gradient-primary)"><i class="fas fa-tv"/></div>
+              <div class="exp-card-icon" style="background: var(--gradient-primary);"><i class="fas fa-tv"/></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Media Tech Expert &#8212; Egyptian TV Networks</span><span class="lang-ar">متحدث ومستشار تقني &#8212; القنوات المصرية</span></h4>
                 <p class="exp-card-org"><span class="lang-en">Featured Speaker across 5+ TV &amp; Radio Channels</span><span class="lang-ar">ظهور دوري في القنوات الفضائية والإذاعات الوطنية</span></p>
@@ -5062,6 +5117,29 @@ iframe.blogger-iframe-colorize {
         </div>
 
         <div class='gallery-grid'>
+          <!-- Keynote Conference Presentation -->
+          <div class="gallery-item" data-category="media" data-aos="zoom-in">
+            <img
+              src="https://i.ibb.co/ZZkXx8j/conference-speaker-computer-vision.jpg"
+              alt="Keynote Presentation on Computer Vision Engine at CIT Digital Tomorrow Conference"
+              loading="lazy"/>
+            <div class="gallery-overlay">
+              <h4><span class="lang-en">Keynote Speaker &#8212; Computer Vision</span><span class="lang-ar">متحدث رئيسي &#8212; محركات الرؤية الحاسوبية</span></h4>
+              <p><span class="lang-en">CIT Digital Tomorrow Conference</span><span class="lang-ar">ملتقى نحو مستقبل رقمي (غرفة صناعة تكنولوجيا المعلومات)</span></p>
+            </div>
+          </div>
+
+          <!-- Air Force Battalion Commander Handover -->
+          <div class="gallery-item" data-category="awards" data-aos="zoom-in">
+            <img
+              src="https://i.ibb.co/wNWQzYrS/army-commander-handover.jpg"
+              alt="Official Handover of Appreciation Certificate with Air Force Battalion Commander"
+              loading="lazy"/>
+            <div class="gallery-overlay">
+              <h4><span class="lang-en">Military Honor Handover</span><span class="lang-ar">تسليم شهادة التقدير الرسمية</span></h4>
+              <p><span class="lang-en">With 5th Airfield Engineering Battalion Commander (Air Force)</span><span class="lang-ar">مع قائد الكتيبة الخامسة مهندسي مطارات (القوات الجوية)</span></p>
+            </div>
+          </div>
           <div class='gallery-item' data-aos='zoom-in' data-category='media'>
             <img alt='Media' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png'/>
           </div>
