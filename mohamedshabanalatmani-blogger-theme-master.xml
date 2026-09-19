@@ -1598,6 +1598,62 @@ main {
 }
 
 
+/* --- Honors & Media Visual Card Enhancement --- */
+.exp-card-visual-bg {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 229, 255, 0.28) !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.55), 0 0 20px rgba(0, 229, 255, 0.12) !important;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease, border-color 0.4s ease !important;
+}
+
+.exp-card-visual-bg:hover {
+  transform: translateY(-8px) scale(1.02) !important;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.75), 0 0 35px rgba(0, 229, 255, 0.28) !important;
+  border-color: rgba(0, 229, 255, 0.55) !important;
+}
+
+.exp-card-visual-bg .exp-card-header {
+  position: relative;
+  z-index: 2;
+}
+
+.exp-card-visual-bg .exp-card-title {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+}
+
+.exp-card-visual-bg .exp-card-org {
+  color: #7dd3fc !important;
+  font-weight: 600;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+
+.exp-card-visual-bg .exp-card-desc {
+  position: relative;
+  z-index: 2;
+  color: #f1f5f9 !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.95);
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.exp-card-visual-bg .exp-card-action {
+  position: relative;
+  z-index: 2;
+}
+
+/* 3D & Glowing Icons Effect */
+.exp-card-icon, .skill-card-icon, .cert-icon {
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.exp-card:hover .exp-card-icon, .cert-card:hover .cert-icon {
+  transform: translateY(-3px) scale(1.1) rotate(4deg);
+  box-shadow: 0 12px 25px rgba(0, 229, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6) !important;
+}
+
 /* ==========================================================================
    DUAL LANGUAGE ENGINE (EN ↔ AR)
    Base: English shown, Arabic hidden.
@@ -4983,7 +5039,7 @@ iframe.blogger-iframe-colorize {
 
         <div class="exp-grid">
           <!-- Libyan Shield -->
-          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/wFn9v7B6/shield-libya.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/wFn9v7B6/shield-libya.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="100">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-shield-alt"/></div>
               <div>
@@ -5000,7 +5056,7 @@ iframe.blogger-iframe-colorize {
           </div>
 
           <!-- Moroccan Shield -->
-          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="200">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-award"/></div>
               <div>
@@ -5017,7 +5073,7 @@ iframe.blogger-iframe-colorize {
           </div>
 
           <!-- Armed Forces / Air Force Recognition -->
-          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="300">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="300">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, #38bdf8, #1d4ed8);"><i class="fas fa-medal"/></div>
               <div>
@@ -5034,7 +5090,7 @@ iframe.blogger-iframe-colorize {
           </div>
 
           <!-- ExxonMobil & Misr El Kheir Award -->
-          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="400">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="400">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: var(--gradient-accent);"><i class="fas fa-trophy"/></div>
               <div>
@@ -5051,7 +5107,7 @@ iframe.blogger-iframe-colorize {
           </div>
 
           <!-- Tahya Misr / Ministry of Youth & Sports Shield -->
-          <div class="exp-card exp-card-backdrop" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="500">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="500">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-star"/></div>
               <div>
@@ -5068,7 +5124,7 @@ iframe.blogger-iframe-colorize {
           </div>
 
           <!-- Media Speaker -->
-          <div class="exp-card" style="background: rgba(15, 23, 42, 0.75);" data-aos="fade-up" data-aos-delay="600">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="600">
             <div class="exp-card-header">
               <div class="exp-card-icon" style="background: var(--gradient-primary);"><i class="fas fa-tv"/></div>
               <div>
@@ -5077,6 +5133,11 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class="exp-card-desc">Nile Cultural, Ten TV, Nile News, Channel 2, Radio Misr &#8212; <span class="lang-en">Guest expert explaining Applied AI, automated agents, cyber-physical workflows, and sovereign digital transformation.</span><span class="lang-ar">متحدث خبير في البرامج الحوارية لشرح تطبيقات الذكاء الاصطناعي، الروبوتات، والأتمتة وفرص التحول الرقمي للشباب والشركات.</span></p>
+            <div class="exp-card-action" style="margin-top: 15px;">
+              <button class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png')" type="button">
+                <i class="fas fa-search-plus"/> <span class="lang-en">View Media Screenshot</span><span class="lang-ar">عرض لقطة اللقاء التلفزيوني</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -5383,7 +5444,7 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class='exp-card-desc'><span class='lang-en'>A decoupled, clean Auth and Role-Based Access Control API. Modular design allowing any web service or application to plug in structured permissions and token management.</span><span class='lang-ar'>API مستقلة لإدارة المصادقة والصلاحيات الديناميكية، مصممة بهيكلية نظيفة تسهل دمجها في أي تطبيق برمجياً.</span></p>
-            <a class='btn btn-outline' data-track='oss_rbac_click' href='https://github.com/ashshaban/flask-rbac-microservice' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
+            <a class='btn btn-outline' data-track='oss_rbac_click' href='https://github.com/m0shaban/flask-rbac-microservice' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
               <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
@@ -5397,7 +5458,7 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class='exp-card-desc'><span class='lang-en'>Local document processing, chunking, and vector embedding pipeline. Built for private, knowledge-grounded semantic search and question answering without external leaks.</span><span class='lang-ar'>محرك محلي لمعالجة وتقسيم المستندات واسترجاع المعرفة الدلالية، مخصص لتطبيقات الـ RAG الآمنة والموثوقة.</span></p>
-            <a class='btn btn-outline' data-track='oss_rag_click' href='https://github.com/ashshaban/local-rag-ingestion-engine' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
+            <a class='btn btn-outline' data-track='oss_rag_click' href='https://github.com/m0shaban/local-rag-ingestion-engine' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
               <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
@@ -5411,7 +5472,7 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class='exp-card-desc'><span class='lang-en'>Computer vision pipeline for automated license plate recognition from real-time video streams using OpenCV and optimized character recognition logic.</span><span class='lang-ar'>مسار رؤية حاسوبية للتعرف التلقائي على لوحات المركبات من بث الفيديو المباشر باستخدام OpenCV ونماذج التعرف البصري.</span></p>
-            <a class='btn btn-outline' data-track='oss_alpr_click' href='https://github.com/ashshaban/alpr-stream-processor' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
+            <a class='btn btn-outline' data-track='oss_alpr_click' href='https://github.com/m0shaban/alpr-stream-processor' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
               <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
@@ -5425,7 +5486,7 @@ iframe.blogger-iframe-colorize {
               </div>
             </div>
             <p class='exp-card-desc'><span class='lang-en'>Middleware connecting LLM generation pipelines with multi-platform publishing APIs. Features automated formatting, rate limiting, and webhook dispatching.</span><span class='lang-ar'>برمجية وسيطة تربط مسارات التوليد بالذكاء الاصطناعي مع واجهات النشر المتعددة، مع معالجة التنسيق التلقائي وإدارة الاستدعاءات.</span></p>
-            <a class='btn btn-outline' data-track='oss_content_click' href='https://github.com/ashshaban/omni-content-orchestrator' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
+            <a class='btn btn-outline' data-track='oss_content_click' href='https://github.com/m0shaban/omni-content-orchestrator' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
               <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
@@ -5433,7 +5494,7 @@ iframe.blogger-iframe-colorize {
         </div>
 
         <div data-aos='fade-up' style='text-align:center;margin-top:40px;'>
-          <a class='btn btn-primary' data-track='oss_github_profile_click' href='https://github.com/ashshaban' rel='noopener noreferrer' target='_blank'>
+          <a class='btn btn-primary' data-track='oss_github_profile_click' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'>
             <i class='fab fa-github'/>
             <span class='lang-en'>View All Projects on GitHub</span>
             <span class='lang-ar'>عرض كل المشاريع على GitHub</span>
@@ -5468,12 +5529,21 @@ iframe.blogger-iframe-colorize {
             </p>
 
             <div class='contact-methods'>
+              <a class='contact-method' data-track='contact_official_email_click' data-track-context='contact_methods' href='mailto:info@msalatmani.org'>
+                <div class='contact-method-icon' style='background: linear-gradient(135deg, #00E5FF, #0088cc);'>
+                  <i class='fas fa-briefcase'/>
+                </div>
+                <div class='contact-method-text'>
+                  <h4><span class='lang-en'>Official Inquiries</span><span class='lang-ar'>البريد الرسمي</span></h4>
+                  <p>info@msalatmani.org</p>
+                </div>
+              </a>
               <a class='contact-method' data-track='contact_email_click' data-track-context='contact_methods' href='mailto:msalatmani@gmail.com'>
                 <div class='contact-method-icon'>
                   <i class='fas fa-envelope'/>
                 </div>
                 <div class='contact-method-text'>
-                  <h4><span class='lang-en'>Direct Email</span><span class='lang-ar'>البريد الإلكتروني</span></h4>
+                  <h4><span class='lang-en'>Direct Email</span><span class='lang-ar'>البريد المباشر</span></h4>
                   <p>msalatmani@gmail.com</p>
                 </div>
               </a>
@@ -5495,20 +5565,20 @@ iframe.blogger-iframe-colorize {
                   <p>/in/mohamedshabanalatmani</p>
                 </div>
               </a>
-              <a class='contact-method' data-track='contact_github_click' data-track-context='contact_methods' href='https://github.com/ashshaban' rel='noopener noreferrer' target='_blank'>
+              <a class='contact-method' data-track='contact_github_click' data-track-context='contact_methods' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'>
                 <div class='contact-method-icon' style='background: linear-gradient(135deg, #333, #555);'>
                   <i class='fab fa-github'/>
                 </div>
                 <div class='contact-method-text'>
                   <h4><span class='lang-en'>GitHub Repositories</span><span class='lang-ar'>مستودعات GitHub</span></h4>
-                  <p>/ashshaban</p>
+                  <p>/m0shaban</p>
                 </div>
               </a>
             </div>
 
             <div class='contact-social'>
               <a class='social-link' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank' title='Open LinkedIn profile'><i class='fab fa-linkedin-in'/></a>
-              <a class='social-link' href='https://github.com/ashshaban' rel='noopener noreferrer' target='_blank' title='Open GitHub profile'><i class='fab fa-github'/></a>
+              <a class='social-link' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank' title='Open GitHub profile'><i class='fab fa-github'/></a>
               <a class='social-link' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open X profile'><i class='fab fa-x-twitter'/></a>
               <a class='social-link' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Facebook profile'><i class='fab fa-facebook-f'/></a>
               <a class='social-link' href='https://instagram.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Instagram profile'><i class='fab fa-instagram'/></a>
@@ -5654,7 +5724,7 @@ iframe.blogger-iframe-colorize {
               </h4>
               <div class='footer-social-icons'>
                 <a aria-label='Personal LinkedIn' class='footer-social-icon' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'/></a>
-                <a aria-label='Personal GitHub' class='footer-social-icon' href='https://github.com/ashshaban' rel='noopener noreferrer' target='_blank'><i class='fab fa-github'/></a>
+                <a aria-label='Personal GitHub' class='footer-social-icon' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'><i class='fab fa-github'/></a>
                 <a aria-label='Personal X' class='footer-social-icon' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-x-twitter'/></a>
                 <a aria-label='Personal Facebook' class='footer-social-icon' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-facebook-f'/></a>
                 <a aria-label='Personal Instagram' class='footer-social-icon' href='https://instagram.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-instagram'/></a>
