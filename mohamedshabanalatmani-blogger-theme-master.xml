@@ -476,7 +476,24 @@ body.is-rtl .section-title, body.is-rtl .section-subtitle, body.is-rtl .support-
 body.is-rtl .contact-method-icon { margin-left: 14px; margin-right: 0; }
 body.is-rtl .exp-card-icon { margin-left: 14px; margin-right: 0; }
 body.is-rtl .techno-feature-icon { margin-left: 15px; margin-right: 0; }
-body.is-rtl .cert-icon { margin-left: 18px; margin-right: 0; }
+body.is-rtl .cert-icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #00E5FF 0%, #7C4DFF 100%) !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+  flex-shrink: 0 !important;
+  font-size: 1.25rem !important;
+}
+.cert-icon i {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  display: inline-block !important;
+}
 
 a { color: inherit; text-decoration: none; }
 img { max-width: 100%; display: block; }
@@ -648,7 +665,24 @@ body.is-rtl .timeline-item:nth-child(even) .timeline-dot { right: -10px; left: a
 .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 20px; }
 .cert-card { background: linear-gradient(145deg, rgba(255, 215, 0, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%); border: 1px solid rgba(255, 215, 0, 0.2); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); box-shadow: var(--glass-shadow); border-radius: 16px; padding: 22px; display: flex; align-items: flex-start; gap: 18px; transition: all 0.3s ease; }
 .cert-card:hover { transform: translateY(-5px); border-color: var(--gold); box-shadow: 0 10px 30px rgba(255, 215, 0, 0.15); }
-.cert-icon { width: 46px; height: 46px; background: linear-gradient(135deg, var(--gold) 0%, #ffaa00 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.2rem; color: var(--darker); flex-shrink: 0; }
+.cert-icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #00E5FF 0%, #7C4DFF 100%) !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+  flex-shrink: 0 !important;
+  font-size: 1.25rem !important;
+}
+.cert-icon i {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  display: inline-block !important;
+}
 .cert-content h4 { font-size: 1rem; margin-bottom: 4px; color: var(--light); line-height: 1.4; }
 .cert-content p { color: var(--gray); font-size: 0.85rem; margin: 0; }
 
@@ -833,7 +867,24 @@ body.is-rtl .timeline-item:nth-child(even) .timeline-dot { right: -10px; left: a
   .exp-card-title { font-size: 0.88rem; }
   .exp-card-desc { font-size: 0.82rem; }
   .cert-card { padding: 16px; gap: 12px; }
-  .cert-icon { width: 38px; height: 38px; font-size: 1rem; }
+  .cert-icon {
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #00E5FF 0%, #7C4DFF 100%) !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+  flex-shrink: 0 !important;
+  font-size: 1.25rem !important;
+}
+.cert-icon i {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  display: inline-block !important;
+}
   .cert-content h4 { font-size: 0.88rem; }
   .cert-content p { font-size: 0.78rem; }
   .case-card { padding: 18px; }
@@ -1644,14 +1695,41 @@ main {
 
 /* 3D & Glowing Icons Effect */
 .exp-card-icon, .skill-card-icon, .cert-icon {
-  position: relative;
-  box-shadow: 0 8px 20px rgba(0, 229, 255, 0.25), inset 0 1px 1px rgba(255, 255, 255, 0.4) !important;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #00E5FF 0%, #7C4DFF 100%) !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+  flex-shrink: 0 !important;
+  font-size: 1.25rem !important;
+}
+.cert-icon i {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  display: inline-block !important;
 }
 
 .exp-card:hover .exp-card-icon, .cert-card:hover .cert-icon {
-  transform: translateY(-3px) scale(1.1) rotate(4deg);
-  box-shadow: 0 12px 25px rgba(0, 229, 255, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.6) !important;
+  width: 48px !important;
+  height: 48px !important;
+  border-radius: 12px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  color: #ffffff !important;
+  background: linear-gradient(135deg, #00E5FF 0%, #7C4DFF 100%) !important;
+  box-shadow: 0 4px 15px rgba(0, 229, 255, 0.3) !important;
+  flex-shrink: 0 !important;
+  font-size: 1.25rem !important;
+}
+.cert-icon i {
+  color: #ffffff !important;
+  font-size: 1.25rem !important;
+  display: inline-block !important;
 }
 
 /* ==========================================================================
@@ -3411,6 +3489,35 @@ iframe.blogger-iframe-colorize {
   border-radius: 16px !important;
   padding: 24px !important;
 }
+
+#honors .exp-card {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 220px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+#honors .exp-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.2) !important;
+  border-color: rgba(0, 229, 255, 0.4) !important;
+}
+#honors .exp-card-visual-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+#honors .exp-card h3, #honors .exp-card p, #honors .exp-card span {
+  position: relative !important;
+  z-index: 2 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8) !important;
+}
+
 </style>
 
 
@@ -3567,7 +3674,7 @@ iframe.blogger-iframe-colorize {
       <span id='live-utc-clock'>UTC 00:00:00</span>
       <span>LATENCY: <strong style='color:#00ff88;'>11ms</strong></span>
       <button class='sound-toggle-btn' id='soundToggleBtn' onclick='toggleSound()' title='Toggle Interface Audio'>
-        <i class='fas fa-volume-up' id='soundIcon'/>
+        <i class='fas fa-volume-up' id='soundIcon'></i>
       </button>
     </div>
   </div>
@@ -3606,7 +3713,36 @@ iframe.blogger-iframe-colorize {
           background-repeat: no-repeat;
           background-size: cover;
         }
-      </style>
+      
+#honors .exp-card {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 220px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+#honors .exp-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.2) !important;
+  border-color: rgba(0, 229, 255, 0.4) !important;
+}
+#honors .exp-card-visual-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+#honors .exp-card h3, #honors .exp-card p, #honors .exp-card span {
+  position: relative !important;
+  z-index: 2 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+</style>
     </b:if>
   </b:includable>
             <b:includable id='description'>
@@ -3650,10 +3786,10 @@ iframe.blogger-iframe-colorize {
 </b:widget>
         </b:section>
         <button aria-label='Toggle language' class='lang-toggle-btn' onclick='toggleLanguage()'>
-          <i class='fas fa-globe'/> <span class='lang-toggle-text'>AR</span>
+          <i class='fas fa-globe'></i> <span class='lang-toggle-text'>AR</span>
         </button>
         <button aria-label='Toggle navigation menu' class='mobile-toggle' id='mobileToggle' title='Toggle navigation menu'>
-          <i class='fas fa-bars'/>
+          <i class='fas fa-bars'></i>
         </button>
       </div>
     </nav>
@@ -3670,7 +3806,7 @@ iframe.blogger-iframe-colorize {
         <div class='hero-grid'>
           <div class='hero-content' data-aos='fade-up'>
             <div class='hero-badge'>
-              <i class='fas fa-microchip'/>
+              <i class='fas fa-microchip'></i>
               <span class='lang-en'>Applied AI Engineer &amp; Technical Product Builder</span><span class='lang-ar'>مهندس ذكاء اصطناعي تطبيقي ومطور منتجات تقنية 🚀</span>
             </div>
             <h1 class='hero-title'>
@@ -3705,10 +3841,10 @@ iframe.blogger-iframe-colorize {
             </div>
             <div class='btn-group'>
               <a class='btn btn-primary' data-track='hero_primary_business_cta' data-track-context='hero' href='#capabilities'>
-                <i class='fas fa-rocket'/> <span class='lang-en'>Explore My Work</span><span class='lang-ar'>استكشف أعمالي</span>
+                <i class='fas fa-rocket'></i> <span class='lang-en'>Explore My Work</span><span class='lang-ar'>استكشف أعمالي</span>
               </a>
               <a class='btn btn-outline' data-track='hero_secondary_explore_cta' data-track-context='hero' href='#contact'>
-                <i class='fas fa-comments'/> <span class='lang-en'>Let&#39;s Build Something</span><span class='lang-ar'>لنبنِ معاً</span>
+                <i class='fas fa-comments'></i> <span class='lang-en'>Let&#39;s Build Something</span><span class='lang-ar'>لنبنِ معاً</span>
               </a>
             </div>
             <div class='hero-stats'>
@@ -3798,7 +3934,7 @@ iframe.blogger-iframe-colorize {
         <b:if cond='data:view.isMultipleItems'>
           <div class='hub-header-badge' data-aos='fade-up'>
             <span class='hub-badge-pill'>
-              <i class='fas fa-newspaper'/>
+              <i class='fas fa-newspaper'></i>
               <span class='lang-en'>NEWS &amp; PRESS COVERAGE</span>
               <span class='lang-ar'>الأخبار والتغطية الصحفية الرسمية</span>
             </span>
@@ -3816,8 +3952,8 @@ iframe.blogger-iframe-colorize {
         <b:if cond='data:view.isSingleItem'>
           <div class='article-top-bar' style='margin-bottom: 24px;'>
             <a class='btn btn-outline btn-sm' href='/'>
-              <i class='fas fa-arrow-left lang-en' style='margin-right:6px;'/>
-              <i class='fas fa-arrow-right lang-ar' style='margin-left:6px;'/>
+              <i class='fas fa-arrow-left lang-en' style='margin-right:6px;'></i>
+              <i class='fas fa-arrow-right lang-ar' style='margin-left:6px;'></i>
               <span class='lang-en'>&#8592; Back to Homepage &amp; Portfolio</span>
               <span class='lang-ar'>&#8592; العودة للصفحة الرئيسية والمعرض</span>
             </a>
@@ -4288,7 +4424,36 @@ iframe.blogger-iframe-colorize {
         opacity: 1;
       }
     }
-  </style>
+  
+#honors .exp-card {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 220px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+#honors .exp-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.2) !important;
+  border-color: rgba(0, 229, 255, 0.4) !important;
+}
+#honors .exp-card-visual-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+#honors .exp-card h3, #honors .exp-card p, #honors .exp-card span {
+  position: relative !important;
+  z-index: 2 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+</style>
   <!-- LINT.ThenChange(//depot/google3/java/com/google/blogger/b2/layouts/widgets/v2-style.css) -->
 </b:includable>
             </b:widget>
@@ -4299,25 +4464,25 @@ iframe.blogger-iframe-colorize {
           <!-- Native Social Share Bar -->
           <div class='social-share-bar'>
             <span class='share-title'>
-              <i class='fas fa-share-alt'/>
+              <i class='fas fa-share-alt'></i>
               <span class='lang-en'>Share Article:</span>
               <span class='lang-ar'>مشاركة التغطية:</span>
             </span>
             <div class='share-buttons-group'>
               <a class='share-btn share-btn-linkedin' expr:href='&quot;https://www.linkedin.com/sharing/share-offsite/?url=&quot; + data:blog.url' target='_blank'>
-                <i class='fab fa-linkedin-in'/> LinkedIn
+                <i class='fab fa-linkedin-in'></i> LinkedIn
               </a>
               <a class='share-btn share-btn-x' expr:href='&quot;https://twitter.com/intent/tweet?url=&quot; + data:blog.url + &quot;&amp;text=&quot; + data:blog.pageName' target='_blank'>
-                <i class='fab fa-x-twitter'/> X
+                <i class='fab fa-x-twitter'></i> X
               </a>
               <a class='share-btn share-btn-facebook' expr:href='&quot;https://www.facebook.com/sharer/sharer.php?u=&quot; + data:blog.url' target='_blank'>
-                <i class='fab fa-facebook-f'/> Facebook
+                <i class='fab fa-facebook-f'></i> Facebook
               </a>
               <a class='share-btn share-btn-whatsapp' expr:href='&quot;https://api.whatsapp.com/send?text=&quot; + data:blog.pageName + &quot; &quot; + data:blog.url' target='_blank'>
-                <i class='fab fa-whatsapp'/> WhatsApp
+                <i class='fab fa-whatsapp'></i> WhatsApp
               </a>
               <a class='share-btn share-btn-telegram' expr:href='&quot;https://t.me/share/url?url=&quot; + data:blog.url + &quot;&amp;text=&quot; + data:blog.pageName' target='_blank'>
-                <i class='fab fa-telegram-plane'/> Telegram
+                <i class='fab fa-telegram-plane'></i> Telegram
               </a>
             </div>
           </div>
@@ -4336,7 +4501,7 @@ iframe.blogger-iframe-colorize {
               <b:if cond='data:view.isSingleItem'>
                 <div class='related-posts-container'>
                   <h3 class='related-posts-title'>
-                    <i class='fas fa-fire'/>
+                    <i class='fas fa-fire'></i>
                     <span class='lang-en'><data:title/></span>
                     <span class='lang-ar'>تغطيات ومقالات موصى بها</span>
                   </h3>
@@ -4406,7 +4571,7 @@ iframe.blogger-iframe-colorize {
             <div class='techno-features'>
               <div class='techno-feature'>
                 <div class='techno-feature-icon'>
-                  <i class='fas fa-microchip'/>
+                  <i class='fas fa-microchip'></i>
                 </div>
                 <div class='techno-feature-text'>
                   <h4><span class='lang-en'>High-Quality Training</span><span class='lang-ar'>تدريب عالي الجودة</span></h4>
@@ -4415,7 +4580,7 @@ iframe.blogger-iframe-colorize {
               </div>
               <div class='techno-feature'>
                 <div class='techno-feature-icon'>
-                  <i class='fas fa-tools'/>
+                  <i class='fas fa-tools'></i>
                 </div>
                 <div class='techno-feature-text'>
                   <h4><span class='lang-en'>Workshops &amp; Activities</span><span class='lang-ar'>ورش عمل وأنشطة</span></h4>
@@ -4424,7 +4589,7 @@ iframe.blogger-iframe-colorize {
               </div>
               <div class='techno-feature'>
                 <div class='techno-feature-icon'>
-                  <i class='fas fa-handshake'/>
+                  <i class='fas fa-handshake'></i>
                 </div>
                 <div class='techno-feature-text'>
                   <h4><span class='lang-en'>Specialized Partnerships</span><span class='lang-ar'>شراكات</span></h4>
@@ -4433,7 +4598,7 @@ iframe.blogger-iframe-colorize {
               </div>
 
               <a class='btn btn-outline' href='https://www.facebook.com/technoegypt0/' style='margin-top: 20px' target='_blank'>
-                <i class='fab fa-facebook'/> <span class='lang-en'>Follow Techno Egypt</span><span class='lang-ar'>تابعنا على فيسبوك</span>
+                <i class='fab fa-facebook'></i> <span class='lang-en'>Follow Techno Egypt</span><span class='lang-ar'>تابعنا على فيسبوك</span>
               </a>
             </div>
           </div>
@@ -4468,7 +4633,7 @@ iframe.blogger-iframe-colorize {
         <div class='exp-grid'>
           <article class='exp-card' data-aos='fade-up' data-aos-delay='100'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon'><i class='fas fa-brain'/></div>
+              <div class='exp-card-icon'><i class='fas fa-brain'></i></div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>Applied AI &amp; Intelligent Systems</span><span class='lang-ar'>ذكاء اصطناعي تطبيقي وأنظمة ذكية</span></h4>
                 <p class='exp-card-org'><span class='lang-en'>LLMs, RAG, AI Agents &amp; Vision</span><span class='lang-ar'>نماذج لغوية، RAG، ووكلاء AI</span></p>
@@ -4482,7 +4647,7 @@ iframe.blogger-iframe-colorize {
 
           <article class='exp-card' data-aos='fade-up' data-aos-delay='200'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon'><i class='fas fa-server'/></div>
+              <div class='exp-card-icon'><i class='fas fa-server'></i></div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>Software &amp; Backend Engineering</span><span class='lang-ar'>هندسة البرمجيات والـ Backend</span></h4>
                 <p class='exp-card-org'><span class='lang-en'>Python, FastAPI, Databases &amp; APIs</span><span class='lang-ar'>بنية برمجية قوية وواجهات APIs</span></p>
@@ -4496,7 +4661,7 @@ iframe.blogger-iframe-colorize {
 
           <article class='exp-card' data-aos='fade-up' data-aos-delay='300'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon'><i class='fas fa-cogs'/></div>
+              <div class='exp-card-icon'><i class='fas fa-cogs'></i></div>
               <div>
                 <h4 class='exp-card-title'>
                   <span class='lang-en'>AI Workflow Automation &amp; Integration</span><span class='lang-ar'>أتمتة خطوط العمل والتكامل الذكي</span>
@@ -4512,7 +4677,7 @@ iframe.blogger-iframe-colorize {
 
           <article class='exp-card' data-aos='fade-up' data-aos-delay='400'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon'><i class='fas fa-rocket'/></div>
+              <div class='exp-card-icon'><i class='fas fa-rocket'></i></div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>End-to-End Product Building</span><span class='lang-ar'>بناء وتطوير المنتجات المتكاملة</span></h4>
                 <p class='exp-card-org'><span class='lang-en'>From Problem to Production</span><span class='lang-ar'>من المشكلة إلى الإطلاق والإنتاج</span></p>
@@ -4553,31 +4718,31 @@ iframe.blogger-iframe-colorize {
             </p>
             <div class='robovai-services'>
               <div class='robovai-service'>
-                <i class='fas fa-network-wired'/>
+                <i class='fas fa-network-wired'></i>
                 <h4><span class='lang-en'>RoboVAI Nova</span><span class='lang-ar'>روبوفاي نوفا</span></h4>
               </div>
               <div class='robovai-service'>
-                <i class='fas fa-rocket'/>
+                <i class='fas fa-rocket'></i>
                 <h4><span class='lang-en'>RoboVAI Boost</span><span class='lang-ar'>روبوفاي بوست</span></h4>
               </div>
               <div class='robovai-service'>
-                <i class='fas fa-shield-alt'/>
+                <i class='fas fa-shield-alt'></i>
                 <h4><span class='lang-en'>Control Layer</span><span class='lang-ar'>طبقة التحكم</span></h4>
               </div>
               <div class='robovai-service'>
-                <i class='fas fa-chart-line'/>
+                <i class='fas fa-chart-line'></i>
                 <h4><span class='lang-en'>Applied Proof</span><span class='lang-ar'>تطبيقات عملية</span></h4>
               </div>
             </div>
             <a class='btn btn-primary robovai-cta' data-track='robovai_section_cta' data-track-context='robovai_section' href='https://robovai.tech' rel='noopener noreferrer' target='_blank'>
-              <i class='fas fa-external-link-alt'/> <span class='lang-en'>Explore RoboVAI Projects</span><span class='lang-ar'>استكشف مشاريع RoboVAI</span>
+              <i class='fas fa-external-link-alt'></i> <span class='lang-en'>Explore RoboVAI Projects</span><span class='lang-ar'>استكشف مشاريع RoboVAI</span>
             </a>
           </div>
           <div data-aos='fade-left'>
             <div class='skills-grid skills-grid-compact'>
               <div class='skill-category'>
                 <h3 class='skill-heading'>
-                  <i class='fas fa-cube icon-primary'/>
+                  <i class='fas fa-cube icon-primary'></i>
                   <span class='lang-en'>RoboVAI Nova</span><span class='lang-ar'>روبوفاي نوفا</span>
                 </h3>
                 <p class='skill-summary'>
@@ -4592,7 +4757,7 @@ iframe.blogger-iframe-colorize {
               </div>
               <div class='skill-category'>
                 <h3 class='skill-heading'>
-                  <i class='fas fa-users icon-accent'/>
+                  <i class='fas fa-users icon-accent'></i>
                   <span class='lang-en'>RoboVAI Boost</span><span class='lang-ar'>روبوفاي بوست</span>
                 </h3>
                 <p class='skill-summary'>
@@ -4607,7 +4772,7 @@ iframe.blogger-iframe-colorize {
               </div>
               <div class='skill-category'>
                 <h3 class='skill-heading'>
-                  <i class='fas fa-brain icon-gold'/>
+                  <i class='fas fa-brain icon-gold'></i>
                   <span class='lang-en'>Builder Proof</span><span class='lang-ar'>دليل البناء العملي</span>
                 </h3>
                 <p class='skill-summary'>
@@ -4800,7 +4965,7 @@ iframe.blogger-iframe-colorize {
           <!-- Tahya Misr -->
           <div class='exp-card' data-aos='fade-up' data-aos-delay='100'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon'><i class='fas fa-flag'/></div>
+              <div class='exp-card-icon'><i class='fas fa-flag'></i></div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>Tahya Misr Youth Union</span><span class='lang-ar'>اتحاد شباب تحيا مصر</span></h4>
                 <p class='exp-card-org'>2020 - 2024</p>
@@ -4816,7 +4981,7 @@ iframe.blogger-iframe-colorize {
           <div class='exp-card' data-aos='fade-up' data-aos-delay='200'>
             <div class='exp-card-header'>
               <div class='exp-card-icon' style='background: var(--gradient-accent)'>
-                <i class='fas fa-university'/>
+                <i class='fas fa-university'></i>
               </div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>Student Union President</span><span class='lang-ar'>رئيس اتحاد الطلاب</span></h4>
@@ -4833,7 +4998,7 @@ iframe.blogger-iframe-colorize {
           <div class='exp-card' data-aos='fade-up' data-aos-delay='300'>
             <div class='exp-card-header'>
               <div class='exp-card-icon' style='background: linear-gradient(135deg, #48dbfb, #0abde3)'>
-                <i class='fas fa-users-cog'/>
+                <i class='fas fa-users-cog'></i>
               </div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>National Youth Council</span><span class='lang-ar'>المجلس الوطني للشباب</span></h4>
@@ -4850,7 +5015,7 @@ iframe.blogger-iframe-colorize {
           <div class='exp-card' data-aos='fade-up' data-aos-delay='350'>
             <div class='exp-card-header'>
               <div class='exp-card-icon' style='background: linear-gradient(135deg, #ff9ff3, #feca57)'>
-                <i class='fas fa-wifi'/>
+                <i class='fas fa-wifi'></i>
               </div>
               <div>
                 <h4 class='exp-card-title'><span class='lang-en'>Digital Inclusion Unit</span><span class='lang-ar'>وحدة الشمول الرقمي</span></h4>
@@ -4868,7 +5033,7 @@ iframe.blogger-iframe-colorize {
           <div class='exp-card' data-aos='fade-up' data-aos-delay='450'>
             <div class='exp-card-header'>
               <div class='exp-card-icon' style='background: linear-gradient(135deg, #1dd1a1, #10ac84)'>
-                <i class='fas fa-id-card'/>
+                <i class='fas fa-id-card'></i>
               </div>
               <div>
                 <h4 class='exp-card-title'>
@@ -4891,7 +5056,7 @@ iframe.blogger-iframe-colorize {
           <div class='exp-card' data-aos='fade-up' data-aos-delay='400'>
             <div class='exp-card-header'>
               <div class='exp-card-icon' style='background: linear-gradient(135deg, #a29bfe, #6c5ce7)'>
-                <i class='fas fa-network-wired'/>
+                <i class='fas fa-network-wired'></i>
               </div>
               <div>
                 <h4 class='exp-card-title'>IEEE Active Member</h4>
@@ -4927,88 +5092,123 @@ iframe.blogger-iframe-colorize {
             <img alt='Certificates and Awards' decoding='async' loading='lazy' src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZG3Jni1JA64fnSKpLVF56gfg9wHYFGagjaX_rxvVBQg78CVurApZbfeEaJOn-gm9WjOpFsyrvP1tG8noLWTyvXwfnw1wb5WAZ4tc1hVuaJWpOtCRQ5msCvP9Y0QrXYUhKNXSzEc6iuv_TNApdTiDppswS1S6RgbdZQgaWAj7VsgucxvRxeqEoqUqIkd77/s1600/IMG-20251015-WA0585.jpg' style='width: 100%; height: auto; display: block;'/>
         </div>
 
-        <div class='cert-grid'>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='100'>
-            <div class='cert-icon' style='background: var(--gradient-accent)'><i class='fas fa-user-tie'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Ministry of Youth Cadres</span><span class='lang-ar'>كوادر وزارة الشباب والرياضة</span></h4>
-              <p><span class='lang-en'>Police Research Center</span><span class='lang-ar'>مركز بحوث الشرطة</span></p>
+                <div class="cert-grid">
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #8B5CF6 0%, #6D28D9 100%) !important; box-shadow: 0 4px 15px rgba(139, 92, 246, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-user-tie" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Ministry of Youth Cadres</span><span class="lang-ar">كوادر وزارة الشباب والرياضة</span></h4>
+              <p><span class="lang-en">Police Research Center</span><span class="lang-ar">مركز بحوث الشرطة</span></p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='100'>
-            <div class='cert-icon'><i class='fas fa-brain'/></div>
-            <div class='cert-content'>
-              <h4>Huawei Certified ICT Associate (AI)</h4>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #EC4899 0%, #BE185D 100%) !important; box-shadow: 0 4px 15px rgba(236, 72, 153, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-brain" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Huawei Certified ICT Associate (AI)</span><span class="lang-ar">شهادة هواوي المعتمدة للذكاء الاصطناعي (HCIA-AI)</span></h4>
               <p>Huawei ICT Academy</p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='150'>
-            <div class='cert-icon' style='background: var(--gradient-accent)'><i class='fas fa-microchip'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Certified Artificial Intelligence (AI)</span><span class='lang-ar'>الذكاء الاصطناعي المعتمد</span></h4>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #00E5FF 0%, #0284C7 100%) !important; box-shadow: 0 4px 15px rgba(0, 229, 255, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-microchip" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Certified Artificial Intelligence (AI)</span><span class="lang-ar">الذكاء الاصطناعي المعتمد</span></h4>
               <p>NTI-Huawei Egyptian Talents Academy (ETA)</p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='200'>
-            <div class='cert-icon'><i class='fas fa-magic'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Generative AI Certificate (GAIC)</span><span class='lang-ar'>شهادة الذكاء الاصطناعي التوليدي</span></h4>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #A855F7 0%, #7C3AED 100%) !important; box-shadow: 0 4px 15px rgba(168, 85, 247, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-wand-magic-sparkles" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Generative AI Certificate (GAIC)</span><span class="lang-ar">شهادة الذكاء الاصطناعي التوليدي</span></h4>
               <p>Sprints / MCIT</p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='250'>
-            <div class='cert-icon' style='background: linear-gradient(135deg, #ffd700, #ffa500)'><i class='fas fa-chart-line'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Financial Entrepreneurship</span><span class='lang-ar'>ريادة الأعمال المالية</span></h4>
-              <p><span class='lang-en'>Chamber of Commerce</span><span class='lang-ar'>الغرفة التجارية</span></p>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%) !important; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-chart-line" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Financial Entrepreneurship</span><span class="lang-ar">ريادة الأعمال المالية</span></h4>
+              <p><span class="lang-en">Chamber of Commerce</span><span class="lang-ar">الغرفة التجارية</span></p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='300'>
-            <div class='cert-icon'><i class='fas fa-industry'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Digital Manufacturing &amp; Design</span><span class='lang-ar'>التصنيع الرقمي والتصميم</span></h4>
-              <p><span class='lang-en'>University at Buffalo</span><span class='lang-ar'>جامعة بافالو</span></p>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="350">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #10B981 0%, #059669 100%) !important; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-industry" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Digital Manufacturing &amp; Design</span><span class="lang-ar">التصنيع الرقمي والتصميم</span></h4>
+              <p><span class="lang-en">University at Buffalo</span><span class="lang-ar">جامعة بافالو</span></p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='350'>
-            <div class='cert-icon'><i class='fas fa-wifi'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>IoT &amp; Embedded Systems</span><span class='lang-ar'>إنترنت الأشياء والأنظمة المدمجة</span></h4>
-              <p><span class='lang-en'>University of California, Irvine</span><span class='lang-ar'>جامعة كاليفورنيا - إرفاين</span></p>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%) !important; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-wifi" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">IoT &amp; Embedded Systems</span><span class="lang-ar">إنترنت الأشياء والأنظمة المدمجة</span></h4>
+              <p><span class="lang-en">University of California, Irvine</span><span class="lang-ar">جامعة كاليفورنيا - إرفاين</span></p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='400'>
-            <div class='cert-icon'><i class='fas fa-leaf'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Certified Sustainable Development Ambassador</span><span class='lang-ar'>سفير التنمية المستدامة المعتمد</span></h4>
-              <p><span class='lang-en'>Min. of Planning &amp; Economic Dev.</span><span class='lang-ar'>وزارة التخطيط والتنمية الاقتصادية</span></p>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="450">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #22C55E 0%, #15803D 100%) !important; box-shadow: 0 4px 15px rgba(34, 197, 94, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-leaf" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Certified Sustainable Development Ambassador</span><span class="lang-ar">سفير التنمية المستدامة المعتمد</span></h4>
+              <p><span class="lang-en">Min. of Planning &amp; Economic Dev.</span><span class="lang-ar">وزارة التخطيط والتنمية الاقتصادية</span></p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='450'>
-            <div class='cert-icon'><i class='fas fa-award'/></div>
-            <div class='cert-content'>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%) !important; box-shadow: 0 4px 15px rgba(59, 130, 246, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-award" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
               <h4>Value for Youth Cadres</h4>
               <p>NTA &amp; Hayat Karima</p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='500'>
-            <div class='cert-icon'><i class='fas fa-user-check'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Certified Digital Cadre</span><span class='lang-ar'>الكادر الرقمي المعتمد</span></h4>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="550">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #6366F1 0%, #4338CA 100%) !important; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-user-check" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Certified Digital Cadre</span><span class="lang-ar">الكادر الرقمي المعتمد</span></h4>
               <p>MCIT &amp; Hayat Karima</p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='550'>
-            <div class='cert-icon'><i class='fas fa-users-cog'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Leaders of the New Republic</span><span class='lang-ar'>قادة الجمهورية الجديدة</span></h4>
-              <p><span class='lang-en'>Ministry of Youth and Sports</span><span class='lang-ar'>وزارة الشباب والرياضة</span></p>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #F97316 0%, #C2410C 100%) !important; box-shadow: 0 4px 15px rgba(249, 115, 22, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-users-gear" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Leaders of the New Republic</span><span class="lang-ar">قادة الجمهورية الجديدة</span></h4>
+              <p><span class="lang-en">Ministry of Youth and Sports</span><span class="lang-ar">وزارة الشباب والرياضة</span></p>
             </div>
           </div>
-          <div class='cert-card' data-aos='fade-up' data-aos-delay='600'>
-            <div class='cert-icon'><i class='fas fa-lightbulb'/></div>
-            <div class='cert-content'>
-              <h4><span class='lang-en'>Innovation &amp; Sustainability</span><span class='lang-ar'>الابتكار والاستدامة</span></h4>
+
+          <div class="cert-card" data-aos="fade-up" data-aos-delay="650">
+            <div class="cert-icon" style="background: linear-gradient(135deg, #EAB308 0%, #CA8A04 100%) !important; box-shadow: 0 4px 15px rgba(234, 179, 8, 0.45) !important; width: 48px !important; height: 48px !important; min-width: 48px !important; border-radius: 12px !important; display: inline-flex !important; align-items: center !important; justify-content: center !important; color: #ffffff !important; flex-shrink: 0 !important;">
+              <i class="fas fa-lightbulb" style="color: #ffffff !important; font-size: 1.25rem !important; display: inline-block !important;"></i>
+            </div>
+            <div class="cert-content">
+              <h4><span class="lang-en">Innovation &amp; Sustainability</span><span class="lang-ar">الابتكار والاستدامة</span></h4>
               <p>Friedrich Naumann Foundation</p>
             </div>
           </div>
@@ -5016,7 +5216,7 @@ iframe.blogger-iframe-colorize {
 
         <div data-aos='fade-up' style='text-align: center; margin-top: 3rem;'>
           <a class='btn btn-outline' href='https://drive.google.com/file/d/1rYMtebx9unMt-DOMDUPn-I3ucIK9AND6/view?usp=sharing' rel='noopener noreferrer' target='_blank'>
-            <i class='fas fa-folder-open'/> 
+            <i class='fas fa-folder-open'></i> 
             <span class='lang-en'>View All Verifiable Certificates (Google Drive)</span>
             <span class='lang-ar'>عرض جميع الشهادات المعتمدة (جوجل درايف)</span>
           </a>
@@ -5037,107 +5237,77 @@ iframe.blogger-iframe-colorize {
           <span class="lang-ar">دروع تميز وشهادات تقدير رسمية من وزارات وهيئات سيادية ودولية تقديراً للمشاريع والقيادة التقنية والهندسية.</span>
         </p>
 
-        <div class="exp-grid">
+                <div class="exp-grid">
           <!-- Libyan Shield -->
-          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/wFn9v7B6/shield-libya.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="100">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/wFn9v7B6/shield-libya.jpg')" style="cursor: pointer; background: linear-gradient(180deg, rgba(8, 14, 26, 0.65) 0%, rgba(6, 10, 20, 0.88) 100%), url('https://i.ibb.co/wFn9v7B6/shield-libya.jpg') center/cover no-repeat !important; min-height: 230px !important;" data-aos="fade-up" data-aos-delay="100">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-shield-alt"/></div>
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-shield-alt"></i></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Shield of Honor &#8212; Libyan Government</span><span class="lang-ar">درع التميز &#8212; وزارة العمل الليبية</span></h4>
                 <p class="exp-card-org"><span class="lang-en">Libyan Ministry of Labor &amp; Omal Misr Group</span><span class="lang-ar">وزارة العمل والتأهيل بحكومة ليبيا ومجموعة عمال مصر</span></p>
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Awarded the official Shield of Honor by the Libyan Minister of Labor for orchestrating and delivering the specialized Cybersecurity &amp; IT Capacity-Building Program.</span><span class="lang-ar">درع شكر وتقدير رسمي من وزير العمل والتأهيل الليبي ورئيس مجلس إدارة عمال مصر تقديراً لإدارة وتنفيذ البرنامج التدريبي المتخصص في (الأمن السيبراني وتكنولوجيا المعلومات).</span></p>
-            <div class="exp-card-action" style="margin-top: 15px;">
-              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/wFn9v7B6/shield-libya.jpg')">
-                <i class="fas fa-search-plus"/> <span class="lang-en">View Shield Photo</span><span class="lang-ar">عرض صورة الدرع كاملة</span>
-              </button>
-            </div>
           </div>
 
           <!-- Moroccan Shield -->
-          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="200">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg')" style="cursor: pointer; background: linear-gradient(180deg, rgba(8, 14, 26, 0.65) 0%, rgba(6, 10, 20, 0.88) 100%), url('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg') center/cover no-repeat !important; min-height: 230px !important;" data-aos="fade-up" data-aos-delay="200">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-award"/></div>
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-award"></i></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Shield of Honor &#8212; Kingdom of Morocco</span><span class="lang-ar">درع الشرف &#8212; المملكة المغربية</span></h4>
                 <p class="exp-card-org"><span class="lang-en">CCISCS (Chambre de Commerce, d'Industrie et de Services)</span><span class="lang-ar">غرفة التجارة والصناعة والخدمات &#8212; الدار البيضاء سطات</span></p>
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Official Shield of Honor and royal crest from the Moroccan Chamber of Commerce for technical innovation, entrepreneurship, and digital transformation contributions.</span><span class="lang-ar">درع التميز والميدالية التذكارية الرسمية للمملكة المغربية من غرفة التجارة والصناعة والخدمات تقديراً للمساهمات في ريادة الأعمال التقنية والابتكار الرقمي.</span></p>
-            <div class="exp-card-action" style="margin-top: 15px;">
-              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/V0LRxmXy/shield-morocco.jpg')">
-                <i class="fas fa-search-plus"/> <span class="lang-en">View Shield Photo</span><span class="lang-ar">عرض صورة الدرع كاملة</span>
-              </button>
-            </div>
           </div>
 
           <!-- Armed Forces / Air Force Recognition -->
-          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="300">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg')" style="cursor: pointer; background: linear-gradient(180deg, rgba(8, 14, 26, 0.65) 0%, rgba(6, 10, 20, 0.88) 100%), url('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg') center/cover no-repeat !important; min-height: 230px !important;" data-aos="fade-up" data-aos-delay="300">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: linear-gradient(135deg, #38bdf8, #1d4ed8);"><i class="fas fa-medal"/></div>
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, #38bdf8, #1d4ed8);"><i class="fas fa-medal"></i></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Military Engineering Honor &#8212; Egyptian Air Force</span><span class="lang-ar">شهادة شكر وتقدير &#8212; القوات الجوية المصرية</span></h4>
                 <p class="exp-card-org"><span class="lang-en">5th Airfield Engineering Battalion, Central Air Zone</span><span class="lang-ar">الكتيبة الخامسة مهندسي مطارات &#8212; المنطقة الجوية المركزية</span></p>
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Official Certificate of Appreciation from the Air Force Battalion Commander for outstanding performance, high military discipline, and spearheading engineering &amp; IT digitization systems.</span><span class="lang-ar">شهادة تقدير رسمية من قيادة القوات الجوية تقديراً للتفاني والانضباط العسكري العالي والدور البارز في إنجاز المشاريع الهندسية ونظم المعلومات والرقمنة بالكتيبة.</span></p>
-            <div class="exp-card-action" style="margin-top: 15px;">
-              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/Xf1jT5YD/army-certificate.jpg')">
-                <i class="fas fa-search-plus"/> <span class="lang-en">View Certificate</span><span class="lang-ar">عرض الشهادة كاملة</span>
-              </button>
-            </div>
           </div>
 
           <!-- ExxonMobil & Misr El Kheir Award -->
-          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="400">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg')" style="cursor: pointer; background: linear-gradient(180deg, rgba(8, 14, 26, 0.65) 0%, rgba(6, 10, 20, 0.88) 100%), url('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg') center/cover no-repeat !important; min-height: 230px !important;" data-aos="fade-up" data-aos-delay="400">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: var(--gradient-accent);"><i class="fas fa-trophy"/></div>
+              <div class="exp-card-icon" style="background: var(--gradient-accent);"><i class="fas fa-trophy"></i></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Misr El Kheir &amp; ExxonMobil Award</span><span class="lang-ar">جائزة مصر الخير وExxonMobil</span></h4>
                 <p class="exp-card-org"><span class="lang-en">GESR SaaS Competition Prize Winner</span><span class="lang-ar">مسابقة جسر للابتكار وريادة الأعمال في التطبيقات الإلكترونية</span></p>
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Winning the official innovation prize for engineering Merkato B2B Industrial Platform, digitizing industrial supply chains and spare parts trading across factories.</span><span class="lang-ar">الفوز بالجائزة الرسمية للابتكار عن تطوير وهندسة منصة Merkato لرقمنة سلاسل التوريد الصناعية وقطع الغيار للمصانع والشركات.</span></p>
-            <div class="exp-card-action" style="margin-top: 15px;">
-              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/4nfKr2cy/exxonmobil-award.jpg')">
-                <i class="fas fa-search-plus"/> <span class="lang-en">View Award Certificate</span><span class="lang-ar">عرض شهادة الجائزة</span>
-              </button>
-            </div>
           </div>
 
           <!-- Tahya Misr / Ministry of Youth & Sports Shield -->
-          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.78) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="500">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg')" style="cursor: pointer; background: linear-gradient(180deg, rgba(8, 14, 26, 0.65) 0%, rgba(6, 10, 20, 0.88) 100%), url('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg') center/cover no-repeat !important; min-height: 230px !important;" data-aos="fade-up" data-aos-delay="500">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-star"/></div>
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-star"></i></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Shield of Excellence &#8212; Ministry of Youth &amp; Sports</span><span class="lang-ar">درع الشكر والتقدير &#8212; وزارة الشباب والرياضة</span></h4>
                 <p class="exp-card-org"><span class="lang-en">Under Auspices of Dr. Ashraf Sobhy &amp; Tahya Misr</span><span class="lang-ar">تحت رعاية وزير الشباب والرياضة واتحاد طلاب تحيا مصر</span></p>
               </div>
             </div>
             <p class="exp-card-desc"><span class="lang-en">Honored for exceptional impact in community development, national capacity building programs, and empowering students and young engineers across Egyptian universities.</span><span class="lang-ar">درع تكريم رسمي للبصمة المتميزة في العمل العام والتنمية المجتمعية وتدريب وتأهيل شباب المهندسين وطلاب الجامعات المصرية.</span></p>
-            <div class="exp-card-action" style="margin-top: 15px;">
-              <button type="button" class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg')">
-                <i class="fas fa-search-plus"/> <span class="lang-en">View Shield Photo</span><span class="lang-ar">عرض صورة الدرع كاملة</span>
-              </button>
-            </div>
           </div>
 
           <!-- Media Speaker -->
-          <div class="exp-card exp-card-backdrop exp-card-visual-bg" style="background: linear-gradient(180deg, rgba(15, 23, 42, 0.82) 0%, rgba(10, 14, 26, 0.94) 75%, rgba(10, 14, 26, 0.98) 100%), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png') center/cover no-repeat;" data-aos="fade-up" data-aos-delay="600">
+          <div class="exp-card exp-card-backdrop exp-card-visual-bg" onclick="if(window.openLightbox) window.openLightbox('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png')" style="cursor: pointer; background: linear-gradient(180deg, rgba(8, 14, 26, 0.65) 0%, rgba(6, 10, 20, 0.88) 100%), url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png') center/cover no-repeat !important; min-height: 230px !important;" data-aos="fade-up" data-aos-delay="600">
             <div class="exp-card-header">
-              <div class="exp-card-icon" style="background: var(--gradient-primary);"><i class="fas fa-tv"/></div>
+              <div class="exp-card-icon" style="background: var(--gradient-primary);"><i class="fas fa-tv"></i></div>
               <div>
                 <h4 class="exp-card-title"><span class="lang-en">Media Tech Expert &#8212; Egyptian TV Networks</span><span class="lang-ar">متحدث ومستشار تقني &#8212; القنوات المصرية</span></h4>
                 <p class="exp-card-org"><span class="lang-en">Featured Speaker across 5+ TV &amp; Radio Channels</span><span class="lang-ar">ظهور دوري في القنوات الفضائية والإذاعات الوطنية</span></p>
               </div>
             </div>
             <p class="exp-card-desc">Nile Cultural, Ten TV, Nile News, Channel 2, Radio Misr &#8212; <span class="lang-en">Guest expert explaining Applied AI, automated agents, cyber-physical workflows, and sovereign digital transformation.</span><span class="lang-ar">متحدث خبير في البرامج الحوارية لشرح تطبيقات الذكاء الاصطناعي، الروبوتات، والأتمتة وفرص التحول الرقمي للشباب والشركات.</span></p>
-            <div class="exp-card-action" style="margin-top: 15px;">
-              <button class="btn btn-outline btn-xs" onclick="if(window.openLightbox) window.openLightbox('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-9YUvxWSmxpEsRXTu2864gSQ1ZjN8DZBxA-GzbksQQ6Q2-LCRdG8fD9fDnNR2KUcJ7rpccLCzlUqWnMI2T-Oy4WKHqBP1WftyylLfKxubfVRsOm-QvYN-JJhxWAXH68Ox-5TGBNuBebLweo43H_H_fyWWyKVPajcigvoR3MVqfihq8OdqoUflDEItSTHW/s1600/1.png')" type="button">
-                <i class="fas fa-search-plus"/> <span class="lang-en">View Media Screenshot</span><span class="lang-ar">عرض لقطة اللقاء التلفزيوني</span>
-              </button>
-            </div>
           </div>
         </div>
       </div>
@@ -5359,7 +5529,7 @@ iframe.blogger-iframe-colorize {
             <div class='gallery-image'>
               <img alt='An intensive masterclass at the Egyptian Tax Authority (Ministry of Finance), exploring practical AI applications in Finance and Business.' loading='lazy' src='https://i.ibb.co/NdrMwHs3/Whats-App-Image-2026-04-24-at-11-31-12-AM.jpg'/>
               <div class='gallery-overlay'>
-                <i class='fas fa-search-plus'/>
+                <i class='fas fa-search-plus'></i>
               </div>
             </div>
             <div class='gallery-caption'>
@@ -5391,7 +5561,7 @@ iframe.blogger-iframe-colorize {
 
         <div class='case-grid'>
           <article class='case-card' data-aos='fade-up' data-aos-delay='100'>
-            <span class='case-badge'><i class='fas fa-code'/> <span class='lang-en'>Technology-First / Isolated</span><span class='lang-ar'>التركيز على الأدوات فقط</span></span>
+            <span class='case-badge'><i class='fas fa-code'></i> <span class='lang-en'>Technology-First / Isolated</span><span class='lang-ar'>التركيز على الأدوات فقط</span></span>
             <h3 class='case-title'><span class='lang-en'>Builds isolated features &amp; demos</span><span class='lang-ar'>بناء ميزات معزولة وتجارب شكلية</span></h3>
             <p class='case-desc'>
               <span class='lang-en'>Focuses on technology keyword lists and shipping disjointed scripts without understanding the underlying problem or system constraints, resulting in fragile demos that fail in production.</span>
@@ -5405,7 +5575,7 @@ iframe.blogger-iframe-colorize {
           </article>
 
           <article class='case-card' data-aos='fade-up' data-aos-delay='200'>
-            <span class='case-badge'><i class='fas fa-brain'/> <span class='lang-en'>Problem-First / Systems Thinking</span><span class='lang-ar'>طريقتي: المشكلة أولاً وبناء النظم</span></span>
+            <span class='case-badge'><i class='fas fa-brain'></i> <span class='lang-en'>Problem-First / Systems Thinking</span><span class='lang-ar'>طريقتي: المشكلة أولاً وبناء النظم</span></span>
             <h3 class='case-title'><span class='lang-en'>Designs &amp; builds complete solutions</span><span class='lang-ar'>هندسة وبناء حلول متكاملة من الفكرة للإنتاج</span></h3>
             <p class='case-desc'>
               <span class='lang-en'>Starts from the actual problem, maps system requirements, writes robust software, integrates AI models with clear evaluation and guardrails, and drives the system to a reliable, usable production result.</span>
@@ -5437,7 +5607,7 @@ iframe.blogger-iframe-colorize {
 
           <article class='exp-card'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: linear-gradient(135deg, #e84393, #c0392b);'><i class='fas fa-lock'/></div>
+              <div class='exp-card-icon' style='background: linear-gradient(135deg, #e84393, #c0392b);'><i class='fas fa-lock'></i></div>
               <div>
                 <h4 class='exp-card-title'>Flask Dynamic RBAC Microservice</h4>
                 <p class='exp-card-org'><span class='lang-en'>Modular Backend Architecture</span><span class='lang-ar'>معمارية Backend مستقلة</span></p>
@@ -5445,13 +5615,13 @@ iframe.blogger-iframe-colorize {
             </div>
             <p class='exp-card-desc'><span class='lang-en'>A decoupled, clean Auth and Role-Based Access Control API. Modular design allowing any web service or application to plug in structured permissions and token management.</span><span class='lang-ar'>API مستقلة لإدارة المصادقة والصلاحيات الديناميكية، مصممة بهيكلية نظيفة تسهل دمجها في أي تطبيق برمجياً.</span></p>
             <a class='btn btn-outline' data-track='oss_rbac_click' href='https://github.com/m0shaban/flask-rbac-microservice' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
-              <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
+              <i class='fab fa-github'></i> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
 
           <article class='exp-card'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: linear-gradient(135deg, #6c5ce7, #a29bfe);'><i class='fas fa-brain'/></div>
+              <div class='exp-card-icon' style='background: linear-gradient(135deg, #6c5ce7, #a29bfe);'><i class='fas fa-brain'></i></div>
               <div>
                 <h4 class='exp-card-title'>Local RAG Ingestion Engine</h4>
                 <p class='exp-card-org'><span class='lang-en'>Applied AI / Vector Retrieval</span><span class='lang-ar'>استرجاع المعرفة بالذكاء الاصطناعي</span></p>
@@ -5459,13 +5629,13 @@ iframe.blogger-iframe-colorize {
             </div>
             <p class='exp-card-desc'><span class='lang-en'>Local document processing, chunking, and vector embedding pipeline. Built for private, knowledge-grounded semantic search and question answering without external leaks.</span><span class='lang-ar'>محرك محلي لمعالجة وتقسيم المستندات واسترجاع المعرفة الدلالية، مخصص لتطبيقات الـ RAG الآمنة والموثوقة.</span></p>
             <a class='btn btn-outline' data-track='oss_rag_click' href='https://github.com/m0shaban/local-rag-ingestion-engine' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
-              <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
+              <i class='fab fa-github'></i> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
 
           <article class='exp-card'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: linear-gradient(135deg, #00b894, #00cec9);'><i class='fas fa-camera'/></div>
+              <div class='exp-card-icon' style='background: linear-gradient(135deg, #00b894, #00cec9);'><i class='fas fa-camera'></i></div>
               <div>
                 <h4 class='exp-card-title'>ALPR Video Stream Processor</h4>
                 <p class='exp-card-org'><span class='lang-en'>Computer Vision &amp; Edge Processing</span><span class='lang-ar'>رؤية حاسوبية ومعالجة فورية</span></p>
@@ -5473,13 +5643,13 @@ iframe.blogger-iframe-colorize {
             </div>
             <p class='exp-card-desc'><span class='lang-en'>Computer vision pipeline for automated license plate recognition from real-time video streams using OpenCV and optimized character recognition logic.</span><span class='lang-ar'>مسار رؤية حاسوبية للتعرف التلقائي على لوحات المركبات من بث الفيديو المباشر باستخدام OpenCV ونماذج التعرف البصري.</span></p>
             <a class='btn btn-outline' data-track='oss_alpr_click' href='https://github.com/m0shaban/alpr-stream-processor' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
-              <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
+              <i class='fab fa-github'></i> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
 
           <article class='exp-card'>
             <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: linear-gradient(135deg, #fdcb6e, #e17055);'><i class='fas fa-network-wired'/></div>
+              <div class='exp-card-icon' style='background: linear-gradient(135deg, #fdcb6e, #e17055);'><i class='fas fa-network-wired'></i></div>
               <div>
                 <h4 class='exp-card-title'>Omni-Channel Content Orchestrator</h4>
                 <p class='exp-card-org'><span class='lang-en'>AI Middleware &amp; Automation</span><span class='lang-ar'>أتمتة المحتوى والربط البرمجي</span></p>
@@ -5487,7 +5657,7 @@ iframe.blogger-iframe-colorize {
             </div>
             <p class='exp-card-desc'><span class='lang-en'>Middleware connecting LLM generation pipelines with multi-platform publishing APIs. Features automated formatting, rate limiting, and webhook dispatching.</span><span class='lang-ar'>برمجية وسيطة تربط مسارات التوليد بالذكاء الاصطناعي مع واجهات النشر المتعددة، مع معالجة التنسيق التلقائي وإدارة الاستدعاءات.</span></p>
             <a class='btn btn-outline' data-track='oss_content_click' href='https://github.com/m0shaban/omni-content-orchestrator' rel='noopener noreferrer' style='margin-top:15px;display:inline-flex;align-items:center;gap:8px;font-size:0.85rem;' target='_blank'>
-              <i class='fab fa-github'/> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
+              <i class='fab fa-github'></i> <span class='lang-en'>View on GitHub</span><span class='lang-ar'>شاهد على GitHub</span>
             </a>
           </article>
 
@@ -5495,7 +5665,7 @@ iframe.blogger-iframe-colorize {
 
         <div data-aos='fade-up' style='text-align:center;margin-top:40px;'>
           <a class='btn btn-primary' data-track='oss_github_profile_click' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'>
-            <i class='fab fa-github'/>
+            <i class='fab fa-github'></i>
             <span class='lang-en'>View All Projects on GitHub</span>
             <span class='lang-ar'>عرض كل المشاريع على GitHub</span>
           </a>
@@ -5510,7 +5680,7 @@ iframe.blogger-iframe-colorize {
 
 <!-- Back to Top Floating Button -->
 <button id='backToTop' onclick='scrollToTop()' title='Scroll to Top'>
-  <i class='fas fa-rocket'/>
+  <i class='fas fa-rocket'></i>
 </button>
 
 <section class='section' id='contact'>
@@ -5531,7 +5701,7 @@ iframe.blogger-iframe-colorize {
             <div class='contact-methods'>
               <a class='contact-method' data-track='contact_official_email_click' data-track-context='contact_methods' href='mailto:info@msalatmani.org'>
                 <div class='contact-method-icon' style='background: linear-gradient(135deg, #00E5FF, #0088cc);'>
-                  <i class='fas fa-briefcase'/>
+                  <i class='fas fa-briefcase'></i>
                 </div>
                 <div class='contact-method-text'>
                   <h4><span class='lang-en'>Official Inquiries</span><span class='lang-ar'>البريد الرسمي</span></h4>
@@ -5540,7 +5710,7 @@ iframe.blogger-iframe-colorize {
               </a>
               <a class='contact-method' data-track='contact_email_click' data-track-context='contact_methods' href='mailto:msalatmani@gmail.com'>
                 <div class='contact-method-icon'>
-                  <i class='fas fa-envelope'/>
+                  <i class='fas fa-envelope'></i>
                 </div>
                 <div class='contact-method-text'>
                   <h4><span class='lang-en'>Direct Email</span><span class='lang-ar'>البريد المباشر</span></h4>
@@ -5549,7 +5719,7 @@ iframe.blogger-iframe-colorize {
               </a>
               <a class='contact-method' data-track='contact_whatsapp_click' data-track-context='contact_methods' href='https://wa.me/201121891913'>
                 <div class='contact-method-icon contact-icon-whatsapp'>
-                  <i class='fab fa-whatsapp'/>
+                  <i class='fab fa-whatsapp'></i>
                 </div>
                 <div class='contact-method-text'>
                   <h4><span class='lang-en'>WhatsApp Chat</span><span class='lang-ar'>محادثة واتساب</span></h4>
@@ -5558,7 +5728,7 @@ iframe.blogger-iframe-colorize {
               </a>
               <a class='contact-method' data-track='contact_linkedin_click' data-track-context='contact_methods' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'>
                 <div class='contact-method-icon contact-icon-linkedin'>
-                  <i class='fab fa-linkedin-in'/>
+                  <i class='fab fa-linkedin-in'></i>
                 </div>
                 <div class='contact-method-text'>
                   <h4><span class='lang-en'>LinkedIn Profile</span><span class='lang-ar'>حساب لينكد إن</span></h4>
@@ -5567,7 +5737,7 @@ iframe.blogger-iframe-colorize {
               </a>
               <a class='contact-method' data-track='contact_github_click' data-track-context='contact_methods' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'>
                 <div class='contact-method-icon' style='background: linear-gradient(135deg, #333, #555);'>
-                  <i class='fab fa-github'/>
+                  <i class='fab fa-github'></i>
                 </div>
                 <div class='contact-method-text'>
                   <h4><span class='lang-en'>GitHub Repositories</span><span class='lang-ar'>مستودعات GitHub</span></h4>
@@ -5577,12 +5747,12 @@ iframe.blogger-iframe-colorize {
             </div>
 
             <div class='contact-social'>
-              <a class='social-link' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank' title='Open LinkedIn profile'><i class='fab fa-linkedin-in'/></a>
-              <a class='social-link' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank' title='Open GitHub profile'><i class='fab fa-github'/></a>
-              <a class='social-link' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open X profile'><i class='fab fa-x-twitter'/></a>
-              <a class='social-link' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Facebook profile'><i class='fab fa-facebook-f'/></a>
-              <a class='social-link' href='https://instagram.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Instagram profile'><i class='fab fa-instagram'/></a>
-              <a class='social-link' href='https://youtube.com/@msalatmani' rel='noopener noreferrer' target='_blank' title='Open YouTube channel'><i class='fab fa-youtube'/></a>
+              <a class='social-link' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank' title='Open LinkedIn profile'><i class='fab fa-linkedin-in'></i></a>
+              <a class='social-link' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank' title='Open GitHub profile'><i class='fab fa-github'></i></a>
+              <a class='social-link' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open X profile'><i class='fab fa-x-twitter'></i></a>
+              <a class='social-link' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Facebook profile'><i class='fab fa-facebook-f'></i></a>
+              <a class='social-link' href='https://instagram.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Instagram profile'><i class='fab fa-instagram'></i></a>
+              <a class='social-link' href='https://youtube.com/@msalatmani' rel='noopener noreferrer' target='_blank' title='Open YouTube channel'><i class='fab fa-youtube'></i></a>
             </div>
           </div>
 
@@ -5627,7 +5797,7 @@ iframe.blogger-iframe-colorize {
                 <textarea name='message' placeholder='Describe the problem, requirements, timeline, or technologies involved.' required='required'/>
               </div>
               <button class='btn btn-primary btn-block' type='submit'>
-                <i class='fas fa-paper-plane'/> <span class='lang-en'>Send Message</span><span class='lang-ar'>إرسال الرسالة</span>
+                <i class='fas fa-paper-plane'></i> <span class='lang-en'>Send Message</span><span class='lang-ar'>إرسال الرسالة</span>
               </button>
               <p aria-live='polite' class='form-status' id='formStatus' role='status'>
                 <span class='lang-en'>I typically respond within 24 hours.</span><span class='lang-ar'>سأرد عليك خلال 24 ساعة.</span>
@@ -5643,7 +5813,7 @@ iframe.blogger-iframe-colorize {
 
     <!-- Floating WhatsApp Button -->
     <a aria-label='Contact via WhatsApp' class='whatsapp-float' data-track='floating_whatsapp_click' href='https://wa.me/201121891913?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%AD%D9%85%D8%AF%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%AA%D9%88%D8%A7%D8%B5%D9%84%20%D9%85%D8%B9%D9%83%20%D8%A8%D8%AE%D8%B5%D9%88%D8%B5%20%D9%85%D8%B4%D8%B1%D9%88%D8%B9%D9%8A.' rel='noopener noreferrer' target='_blank' title='Chat on WhatsApp'>
-      <i class='fab fa-whatsapp'/>
+      <i class='fab fa-whatsapp'></i>
       <span class='whatsapp-float-text'><span class='lang-en'>Let&#39;s Talk</span><span class='lang-ar'>تكلم معايا</span></span>
     </a>
 
@@ -5683,7 +5853,36 @@ iframe.blogger-iframe-colorize {
         .whatsapp-float-text { display: none; }
         .whatsapp-float { padding: 16px; border-radius: 50%; }
       }
-    </style>
+    
+#honors .exp-card {
+  position: relative !important;
+  overflow: hidden !important;
+  min-height: 220px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: space-between !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 16px !important;
+  padding: 24px !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+#honors .exp-card:hover {
+  transform: translateY(-5px) !important;
+  box-shadow: 0 12px 30px rgba(0, 229, 255, 0.2) !important;
+  border-color: rgba(0, 229, 255, 0.4) !important;
+}
+#honors .exp-card-visual-bg {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+#honors .exp-card h3, #honors .exp-card p, #honors .exp-card span {
+  position: relative !important;
+  z-index: 2 !important;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.8) !important;
+}
+
+</style>
 
     <!-- Scripts -->
     
@@ -5723,12 +5922,12 @@ iframe.blogger-iframe-colorize {
                 <span class='lang-ar'>القنوات الشخصية (@msalatmani)</span>
               </h4>
               <div class='footer-social-icons'>
-                <a aria-label='Personal LinkedIn' class='footer-social-icon' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'/></a>
-                <a aria-label='Personal GitHub' class='footer-social-icon' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'><i class='fab fa-github'/></a>
-                <a aria-label='Personal X' class='footer-social-icon' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-x-twitter'/></a>
-                <a aria-label='Personal Facebook' class='footer-social-icon' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-facebook-f'/></a>
-                <a aria-label='Personal Instagram' class='footer-social-icon' href='https://instagram.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-instagram'/></a>
-                <a aria-label='Personal YouTube' class='footer-social-icon' href='https://youtube.com/@msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-youtube'/></a>
+                <a aria-label='Personal LinkedIn' class='footer-social-icon' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'></i></a>
+                <a aria-label='Personal GitHub' class='footer-social-icon' href='https://github.com/m0shaban' rel='noopener noreferrer' target='_blank'><i class='fab fa-github'></i></a>
+                <a aria-label='Personal X' class='footer-social-icon' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-x-twitter'></i></a>
+                <a aria-label='Personal Facebook' class='footer-social-icon' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-facebook-f'></i></a>
+                <a aria-label='Personal Instagram' class='footer-social-icon' href='https://instagram.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-instagram'></i></a>
+                <a aria-label='Personal YouTube' class='footer-social-icon' href='https://youtube.com/@msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-youtube'></i></a>
               </div>
             </div>
             <div class='footer-social-section'>
@@ -5737,11 +5936,11 @@ iframe.blogger-iframe-colorize {
                 <span class='lang-ar'>مشاريع روبوفاي (@RoboVAISolutions)</span>
               </h4>
               <div class='footer-social-icons'>
-                <a aria-label='RobovAI LinkedIn' class='footer-social-icon' href='https://linkedin.com/company/robovaisolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'/></a>
-                <a aria-label='RobovAI X' class='footer-social-icon' href='https://x.com/RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-x-twitter'/></a>
-                <a aria-label='RobovAI Facebook' class='footer-social-icon' href='https://facebook.com/RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-facebook-f'/></a>
-                <a aria-label='RobovAI Instagram' class='footer-social-icon' href='https://instagram.com/RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-instagram'/></a>
-                <a aria-label='RobovAI YouTube' class='footer-social-icon' href='https://youtube.com/@RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-youtube'/></a>
+                <a aria-label='RobovAI LinkedIn' class='footer-social-icon' href='https://linkedin.com/company/robovaisolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'></i></a>
+                <a aria-label='RobovAI X' class='footer-social-icon' href='https://x.com/RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-x-twitter'></i></a>
+                <a aria-label='RobovAI Facebook' class='footer-social-icon' href='https://facebook.com/RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-facebook-f'></i></a>
+                <a aria-label='RobovAI Instagram' class='footer-social-icon' href='https://instagram.com/RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-instagram'></i></a>
+                <a aria-label='RobovAI YouTube' class='footer-social-icon' href='https://youtube.com/@RoboVAISolutions' rel='noopener noreferrer' target='_blank'><i class='fab fa-youtube'></i></a>
               </div>
             </div>
           </div>
@@ -5758,7 +5957,7 @@ iframe.blogger-iframe-colorize {
 
 <!-- Interactive Lightbox Modal -->
 <div id='lightboxModal' onclick='closeLightbox(event)'>
-  <div id='lightboxClose' onclick='closeLightbox(event)'><i class='fas fa-times'/></div>
+  <div id='lightboxClose' onclick='closeLightbox(event)'><i class='fas fa-times'></i></div>
   <img alt='Enlarged View' decoding='async' id='lightboxImg' loading='lazy' src=''/>
 </div>
 
