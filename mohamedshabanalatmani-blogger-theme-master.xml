@@ -73,8 +73,19 @@
     
 
     <!-- Google Analytics (Placeholder) -->
-    <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-WKP4SLGYP3'><![CDATA[
+    <script async='async' src='https://www.googletagmanager.com/gtag/js?id=G-WKP4SLGYP3'></script>
+    <script><![CDATA[
 
+
+
+// Guarantee single article class if URL points to a post
+(function() {
+  if (window.location.pathname.indexOf('/20') !== -1 || window.location.pathname.indexOf('/p/') !== -1) {
+    document.body.classList.add('single-article-active');
+    document.body.classList.add('post-view');
+    document.body.classList.add('item-view');
+  }
+})();
 
 // Interactive Lightbox Engine
 window.openLightbox = function(src) {
@@ -205,6 +216,16 @@ window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-WKP4SLGYP3');
+
+
+// Guarantee single article class if URL points to a post
+(function() {
+  if (window.location.pathname.indexOf('/20') !== -1 || window.location.pathname.indexOf('/p/') !== -1) {
+    document.body.classList.add('single-article-active');
+    document.body.classList.add('post-view');
+    document.body.classList.add('item-view');
+  }
+})();
 
 // Interactive Lightbox Engine
 window.openLightbox = function(src) {
@@ -1907,11 +1928,13 @@ body#layout .add_widget a {
 }
 
 /* Dedicated Single Article Reader View (when item view) */
-body.single-article-active #insights {
-  max-width: 920px !important;
+body.single-article-active #insights,
+body.item-view #insights,
+body.post-view #insights {
+  max-width: 1050px !important;
   width: 100% !important;
-  margin: 30px auto !important;
-  padding: 0 20px !important;
+  margin: 0 auto !important;
+  padding: 110px 20px 80px !important; /* Clear fixed navbar */
 }
 
 body.single-article-active .main-blog-wrapper {
@@ -2269,11 +2292,13 @@ body.is-rtl .post-body blockquote {
 
 /* Single Article Container Width & Centering */
 body.single-article-active #insights,
-body.single-article-active #insights .container {
+body.single-article-active #insights .container,
+body.item-view #insights,
+body.post-view #insights {
   max-width: 1100px !important;
   width: 100% !important;
-  margin: 30px auto !important;
-  padding: 0 20px !important;
+  margin: 0 auto !important;
+  padding: 110px 20px 80px !important;
 }
 
 body.single-article-active .main-blog-wrapper {
@@ -3344,7 +3369,7 @@ iframe.blogger-iframe-colorize {
             &quot;@id&quot;: &quot;<data:blog.homepageUrl/>#website&quot;,
             &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;,
             &quot;name&quot;: &quot;<data:blog.title/>&quot;,
-            &quot;description&quot;: &quot;Mohamed Shaban Alatmani - Applied AI Engineer &amp; Technical Product Builder specializing in LLMs, RAG, AI Agents, Python Backend, and End-to-End Systems.&quot;,
+            &quot;description&quot;: &quot;Mohamed Shaban (Alatmani) &#8212; Applied AI &amp; Solutions Engineer. Turning complex real-world problems into practical AI products and intelligent software systems.&quot;,
             &quot;publisher&quot;: {
               &quot;@id&quot;: &quot;<data:blog.homepageUrl/>#person&quot;
             },
@@ -3354,53 +3379,81 @@ iframe.blogger-iframe-colorize {
             &quot;@type&quot;: [&quot;Person&quot;, &quot;ProfessionalService&quot;],
             &quot;@id&quot;: &quot;<data:blog.homepageUrl/>#person&quot;,
             &quot;name&quot;: &quot;Mohamed Shaban Alatmani&quot;,
-            &quot;alternateName&quot;: [&quot;محمد شعبان العتماني&quot;, &quot;Mohamed Shaban&quot;],
-            &quot;jobTitle&quot;: &quot;Applied AI Engineer&quot;,
-            &quot;description&quot;: &quot;مهندس ذكاء اصطناعي تطبيقي ومطور منتجات تقنية متخصص في تحويل المشاكل الواقعية المعقدة إلى منتجات برمجية وأنظمة ذكية وحلول أتمتة عملية — من الفكرة إلى الإنتاج.&quot;,
+            &quot;alternateName&quot;: [
+              &quot;محمد شعبان العتماني&quot;,
+              &quot;Mohamed Shaban Ibrahim&quot;,
+              &quot;Mohamed Shaban&quot;,
+              &quot;المهندس محمد شعبان&quot;
+            ],
+            &quot;jobTitle&quot;: &quot;Applied AI &amp; Solutions Engineer&quot;,
+            &quot;description&quot;: &quot;أحوّل المشكلات التشغيلية المعقدة إلى منتجات وأنظمة ذكاء اصطناعي عملية &#8212; من فهم المتطلبات وحتى إطلاق النظام في بيئة الإنتاج.&quot;,
             &quot;url&quot;: &quot;<data:blog.homepageUrl/>&quot;,
+            &quot;image&quot;: &quot;https://i.ibb.co/wNWQzYrS/army-commander-handover.jpg&quot;,
             &quot;sameAs&quot;: [
-              &quot;https://github.com/ashshaban&quot;,
-              &quot;https://www.linkedin.com/in/mohamedshabanalatmani&quot;
+              &quot;https://github.com/m0shaban&quot;,
+              &quot;https://linkedin.com/in/mohamedshabanalatmani&quot;,
+              &quot;https://pypi.org/project/robovai-ocr/&quot;,
+              &quot;https://pypi.org/user/msalatmani/&quot;,
+              &quot;https://huggingface.co/moshabann&quot;
+            ],
+            &quot;alumniOf&quot;: [
+              {
+                &quot;@type&quot;: &quot;EducationalOrganization&quot;,
+                &quot;name&quot;: &quot;Arab Academy for Science, Technology &amp; Maritime Transport (AASTMT)&quot;,
+                &quot;description&quot;: &quot;Postgraduate M.Sc. in Mechatronics Engineering (In Progress)&quot;
+              },
+              {
+                &quot;@type&quot;: &quot;EducationalOrganization&quot;,
+                &quot;name&quot;: &quot;High Institute of Engineering, 6th of October City&quot;,
+                &quot;description&quot;: &quot;B.Sc. in Mechatronics Engineering (Grade: Excellent Project)&quot;
+              }
+            ],
+            &quot;award&quot;: [
+              &quot;Shield of Honor &#8212; Libyan Ministry of Labor &amp; Rehabilitation (Cybersecurity &amp; IT Training)&quot;,
+              &quot;Shield of Honor &#8212; Kingdom of Morocco (Chambre de Commerce CCISCS)&quot;,
+              &quot;Official Certificate of Appreciation &#8212; Egyptian Armed Forces / Air Force (5th Airfield Engineering Battalion)&quot;,
+              &quot;Shield of Excellence &#8212; Ministry of Youth &amp; Sports &amp; Tahya Misr Student Union&quot;,
+              &quot;GESR SaaS Innovation Prize Winner &#8212; Misr El Kheir &amp; ExxonMobil&quot;
             ],
             &quot;worksFor&quot;: {
               &quot;@type&quot;: &quot;Organization&quot;,
-              &quot;name&quot;: &quot;RoboVAI&quot;,
+              &quot;name&quot;: &quot;RoboVAI Solutions&quot;,
               &quot;url&quot;: &quot;<data:blog.homepageUrl/>#robovai&quot;
             },
             &quot;knowsAbout&quot;: [
-              &quot;Applied Artificial Intelligence&quot;,
-              &quot;Generative AI&quot;,
-              &quot;AI Agents&quot;,
-              &quot;Large Language Models (LLMs)&quot;,
-              &quot;RAG Systems&quot;,
-              &quot;Python&quot;,
-              &quot;FastAPI&quot;,
-              &quot;PostgreSQL&quot;,
-              &quot;Software Engineering&quot;,
-              &quot;Systems Thinking&quot;,
-              &quot;Mechatronics Engineering&quot;,
-              &quot;Automation&quot;
+              &quot;Applied AI &amp; Solutions Engineering&quot;,
+              &quot;robovai-ocr Python Framework&quot;,
+              &quot;Automated License Plate Recognition (ALPR)&quot;,
+              &quot;Offline Sovereign RAG Systems&quot;,
+              &quot;Autonomous Multi-Agent Orchestration (LangGraph, LangChain)&quot;,
+              &quot;Computer Vision (YOLO, OpenCV, PaddleOCR)&quot;,
+              &quot;FastAPI, Python, PostgreSQL, Redis, Docker&quot;,
+              &quot;Mechatronics &amp; Cyber-Physical Systems&quot;,
+              &quot;Enterprise Digital Transformation&quot;
             ],
             &quot;makesOffer&quot;: [
               {
                 &quot;@type&quot;: &quot;Offer&quot;,
                 &quot;itemOffered&quot;: {
                   &quot;@type&quot;: &quot;Service&quot;,
-                  &quot;name&quot;: &quot;Applied AI &amp; Intelligent Systems Engineering&quot;
+                  &quot;name&quot;: &quot;Applied AI &amp; Sovereign Intelligence Systems Engineering&quot;,
+                  &quot;description&quot;: &quot;Custom production AI pipelines, offline RAG engines, and autonomous multi-agent systems for enterprises.&quot;
                 }
               },
               {
                 &quot;@type&quot;: &quot;Offer&quot;,
                 &quot;itemOffered&quot;: {
                   &quot;@type&quot;: &quot;Service&quot;,
-                  &quot;name&quot;: &quot;AI Workflow Automation &amp; System Integration&quot;
+                  &quot;name&quot;: &quot;Computer Vision &amp; Smart Parking Automation (ALPR)&quot;,
+                  &quot;description&quot;: &quot;High-throughput edge vision, plate parsing (Egypt/GCC), and automated barrier telemetry.&quot;
                 }
               },
               {
                 &quot;@type&quot;: &quot;Offer&quot;,
                 &quot;itemOffered&quot;: {
                   &quot;@type&quot;: &quot;Service&quot;,
-                  &quot;name&quot;: &quot;End-to-End Technical Product Building&quot;
+                  &quot;name&quot;: &quot;AI Workflow Automation &amp; Digital Transformation&quot;,
+                  &quot;description&quot;: &quot;Connecting enterprise operations, eliminating manual bottlenecks, and building full-stack AI SaaS MVPs.&quot;
                 }
               }
             ],
@@ -3408,7 +3461,8 @@ iframe.blogger-iframe-colorize {
               &quot;@type&quot;: &quot;ContactPoint&quot;,
               &quot;contactType&quot;: &quot;technical-consultation&quot;,
               &quot;availableLanguage&quot;: [&quot;Arabic&quot;, &quot;English&quot;],
-              &quot;url&quot;: &quot;<data:blog.homepageUrl/>#contact&quot;
+              &quot;url&quot;: &quot;<data:blog.homepageUrl/>#contact&quot;,
+              &quot;email&quot;: &quot;msalatmani@gmail.com&quot;
             }
           }
         ]
@@ -3416,8 +3470,14 @@ iframe.blogger-iframe-colorize {
       </script>
     </b:if>
 
+    <link href="https://moshaban.me/llms.txt" rel="help" type="text/markdown"/>
 </head>
 <body expr:class='(data:blog.languageDirection == &quot;rtl&quot; ? &quot;is-rtl &quot; : &quot;&quot;) + (data:view.isSingleItem ? &quot;single-article-active &quot; : &quot;&quot;) + (data:view.isError ? &quot;error-page-active&quot; : &quot;&quot;)'>
+  <b:class cond='data:blog.languageDirection == "rtl"' name='is-rtl'/>
+  <b:class cond='data:view.isSingleItem' name='single-article-active'/>
+  <b:class cond='data:view.isPost' name='single-article-active'/>
+  <b:class cond='data:view.isPost' name='post-view'/>
+  <b:class cond='data:view.isSingleItem' name='item-view'/>
 <div id="preloader"><div class="preloader-ring"></div></div>
 
 
@@ -3515,7 +3575,8 @@ iframe.blogger-iframe-colorize {
         <b:section class='nav-menu-sec' id='nav-menu-sec' maxwidgets='1' showaddelement='no' title='Header Menu Area'>
           <b:widget id='HTML128' locked='false' title='🔗 Navigation Menu Links' type='HTML' version='2' visible='true'>
   <b:widget-settings>
-    <b:widget-setting name='content'>&lt;ul class=&quot;nav-links&quot; id=&quot;navLinks&quot;&gt;
+    <b:widget-setting name='content'>
+&lt;ul class=&quot;nav-links&quot; id=&quot;navLinks&quot;&gt;
     &lt;li&gt;&lt;a href=&quot;/#about&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;About&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;من أنا&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;/#capabilities&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;Capabilities&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;مجالات العمل&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;/#robovai&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;RoboVAI&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;روبوفاي&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
@@ -3523,8 +3584,9 @@ iframe.blogger-iframe-colorize {
     &lt;li&gt;&lt;a href=&quot;/#open-source&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;Open Source&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;المشاريع&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;/#insights&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;News&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;الأخبار&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
     &lt;li&gt;&lt;a href=&quot;/#gallery&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;Gallery&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;المعرض&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a class=&quot;nav-cta&quot; href=&quot;/#contact&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;Let&#39;s Talk&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;تواصل معي&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</b:widget-setting>
+    &lt;li&gt;&lt;a class=&quot;nav-cta&quot; href=&quot;/#contact&quot;&gt;&lt;span class=&quot;lang-en&quot;&gt;Let&#x27;s Talk&lt;/span&gt;&lt;span class=&quot;lang-ar&quot;&gt;تواصل معي&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</b:widget-setting>
   </b:widget-settings>
   <b:includable id='main'>
     <data:content/>
@@ -3991,6 +4053,14 @@ iframe.blogger-iframe-colorize {
     <data:post.body/>
   </div>
 </b:includable>
+              <b:includable id='postJumpLink' var='post'>
+  <div class='post-readmore-wrapper' style='margin-top: 16px;'>
+    <a class='btn btn-primary btn-sm' expr:href='data:post.url'>
+      <span class='lang-en'>Read Article &#8594;</span>
+      <span class='lang-ar'>اقرأ التغطية كاملة &#8592;</span>
+    </a>
+  </div>
+</b:includable>
               <b:includable id='postBodySnippet' var='post'>
   <b:include data='post' name='postBody'/>
 </b:includable>
@@ -4055,10 +4125,10 @@ iframe.blogger-iframe-colorize {
   <a expr:name='data:post.id'/>
   <b:if cond='data:post.title != &quot;&quot;'>
     <h3 class='post-title entry-title'>
-      <b:if cond='data:post.link or (data:post.url and data:view.url != data:post.url)'>
-        <a expr:href='data:post.link ?: data:post.url'><data:post.title/></a>
-      <b:else/>
+      <b:if cond='data:view.isSingleItem'>
         <data:post.title/>
+      <b:else/>
+        <a expr:href='data:post.url'><data:post.title/></a>
       </b:if>
     </h3>
   </b:if>
@@ -4857,57 +4927,101 @@ iframe.blogger-iframe-colorize {
     </section>
 
     <!-- Honors &amp; Media Section -->
-    <section class='section'>
-      <div class='container'>
-        <h2 class='section-title' data-aos='fade-up'>
-          <span class='lang-en'>Honors &amp; <span class='gradient-text'>Media</span></span>
-          <span class='lang-ar'>التكريمات <span class='gradient-text'>والإعلام</span></span>
+    <section class="section" id="honors">
+      <div class="container">
+        <h2 class="section-title" data-aos="fade-up">
+          <span class="lang-en">Official Honors &amp; <span class="gradient-text">Recognitions</span></span>
+          <span class="lang-ar">الدروع الرسمية <span class="gradient-text">والتكريمات المعتمدة</span></span>
         </h2>
-        <p class='section-subtitle' data-aos='fade-up' data-aos-delay='100'>
-          <span class='lang-en'>Local and international official honors + Media appearances as a speaker on digital transformation</span>
-          <span class='lang-ar'>تكريمات رسمية + ظهور إعلامي كمتحدث في التحول الرقمي</span>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          <span class="lang-en">Sovereign, ministerial, and international shields of excellence awarded for technical, strategic, and engineering leadership.</span>
+          <span class="lang-ar">دروع تميز وشهادات تقدير رسمية من وزارات وهيئات سيادية ودولية تقديراً للمشاريع والقيادة التقنية والهندسية.</span>
         </p>
 
-        <div class='exp-grid'>
-          <div class='exp-card' data-aos='fade-up' data-aos-delay='100'>
-            <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: linear-gradient(135deg, var(--gold), #ffaa00);'><i class='fas fa-shield-alt'/></div>
+        <div class="exp-grid">
+          <!-- Libyan Shield -->
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-shield-alt"/></div>
               <div>
-                <h4 class='exp-card-title'><span class='lang-en'>Shield of Honor - Libyan Government</span><span class='lang-ar'>درع تكريم - الحكومة الليبية</span></h4>
-                <p class='exp-card-org'><span class='lang-en'>Libyan Ministry of Labor</span><span class='lang-ar'>وزارة العمل الليبية</span></p>
+                <h4 class="exp-card-title"><span class="lang-en">Shield of Honor &#8212; Libyan Government</span><span class="lang-ar">درع التميز &#8212; وزارة العمل الليبية</span></h4>
+                <p class="exp-card-org"><span class="lang-en">Libyan Ministry of Labor &amp; Omal Misr Group</span><span class="lang-ar">وزارة العمل والتأهيل بحكومة ليبيا ومجموعة عمال مصر</span></p>
               </div>
             </div>
-            <p class='exp-card-desc'><span class='lang-en'>Official recognition for technical and strategic contributions.</span><span class='lang-ar'>تكريم رسمي للمساهمات التقنية والاستراتيجية.</span></p>
+            <p class="exp-card-desc"><span class="lang-en">Awarded the official Shield of Honor by the Libyan Minister of Labor for orchestrating and delivering the specialized Cybersecurity &amp; IT Capacity-Building Program.</span><span class="lang-ar">درع شكر وتقدير رسمي من وزير العمل والتأهيل الليبي ورئيس مجلس إدارة عمال مصر تقديراً لإدارة وتنفيذ البرنامج التدريبي المتخصص في (الأمن السيبراني وتكنولوجيا المعلومات).</span></p>
+            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+              <img src="https://i.ibb.co/wFn9v7B6/shield-libya.jpg" alt="Shield of Honor - Libyan Government" style="width: 100%; height: 210px; object-fit: contain; background: #0b0f19; cursor: zoom-in; transition: transform 0.3s ease;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            </div>
           </div>
-          <div class='exp-card' data-aos='fade-up' data-aos-delay='200'>
-            <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: linear-gradient(135deg, var(--gold), #ffaa00);'><i class='fas fa-award'/></div>
+
+          <!-- Moroccan Shield -->
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-award"/></div>
               <div>
-                <h4 class='exp-card-title'><span class='lang-en'>Shield of Honor - Moroccan Government</span><span class='lang-ar'>درع تكريم - الحكومة المغربية</span></h4>
-                <p class='exp-card-org'><span class='lang-en'>Kingdom of Morocco</span><span class='lang-ar'>المملكة المغربية</span></p>
+                <h4 class="exp-card-title"><span class="lang-en">Shield of Honor &#8212; Kingdom of Morocco</span><span class="lang-ar">درع الشرف &#8212; المملكة المغربية</span></h4>
+                <p class="exp-card-org"><span class="lang-en">CCISCS (Chambre de Commerce, d'Industrie et de Services)</span><span class="lang-ar">غرفة التجارة والصناعة والخدمات &#8212; الدار البيضاء سطات</span></p>
               </div>
             </div>
-            <p class='exp-card-desc'><span class='lang-en'>Recognition for contributions to technology and innovation.</span><span class='lang-ar'>تقدير للمساهمات في مجال التكنولوجيا والابتكار.</span></p>
+            <p class="exp-card-desc"><span class="lang-en">Official Shield of Honor and royal crest from the Moroccan Chamber of Commerce for technical innovation, entrepreneurship, and digital transformation contributions.</span><span class="lang-ar">درع التميز والميدالية التذكارية الرسمية للمملكة المغربية من غرفة التجارة والصناعة والخدمات تقديراً للمساهمات في ريادة الأعمال التقنية والابتكار الرقمي.</span></p>
+            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+              <img src="https://i.ibb.co/V0LRxmXy/shield-morocco.jpg" alt="Shield of Honor - Kingdom of Morocco" style="width: 100%; height: 210px; object-fit: contain; background: #0b0f19; cursor: zoom-in; transition: transform 0.3s ease;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            </div>
           </div>
-          <div class='exp-card' data-aos='fade-up' data-aos-delay='300'>
-            <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: var(--gradient-primary)'><i class='fas fa-tv'/></div>
+
+          <!-- Armed Forces / Air Force Recognition -->
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, #38bdf8, #1d4ed8);"><i class="fas fa-medal"/></div>
               <div>
-                <h4 class='exp-card-title'><span class='lang-en'>Media Speaker - Egyptian Channels</span><span class='lang-ar'>متحدث إعلامي - القنوات المصرية</span></h4>
-                <p class='exp-card-org'><span class='lang-en'>TV &amp; Radio Appearances</span><span class='lang-ar'>ظهور تلفزيوني وإذاعي</span></p>
+                <h4 class="exp-card-title"><span class="lang-en">Military Engineering Honor &#8212; Egyptian Air Force</span><span class="lang-ar">شهادة شكر وتقدير &#8212; القوات الجوية المصرية</span></h4>
+                <p class="exp-card-org"><span class="lang-en">5th Airfield Engineering Battalion, Central Air Zone</span><span class="lang-ar">الكتيبة الخامسة مهندسي مطارات &#8212; المنطقة الجوية المركزية</span></p>
               </div>
             </div>
-            <p class='exp-card-desc'>Nile Cultural, Ten TV, Nile News, Channel 2, Radio Misr - <span class='lang-en'>Speaking on AI &amp; Digital Transformation.</span><span class='lang-ar'>كمتحدث في الذكاء الاصطناعي والتحول الرقمي.</span></p>
+            <p class="exp-card-desc"><span class="lang-en">Official Certificate of Appreciation from the Air Force Battalion Commander for outstanding performance, high military discipline, and spearheading engineering &amp; IT digitization systems.</span><span class="lang-ar">شهادة تقدير رسمية من قيادة القوات الجوية تقديراً للتفاني والانضباط العسكري العالي والدور البارز في إنجاز المشاريع الهندسية ونظم المعلومات والرقمنة بالكتيبة.</span></p>
+            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5); display: grid; grid-template-columns: 1fr 1fr; gap: 6px; padding: 6px; background: #0b0f19;">
+              <img src="https://i.ibb.co/Xf1jT5YD/army-certificate.jpg" alt="Air Force Appreciation Certificate" style="width: 100%; height: 198px; object-fit: cover; border-radius: 8px; cursor: zoom-in;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+              <img src="https://i.ibb.co/wNWQzYrS/army-commander-handover.jpg" alt="Award Handover with Battalion Commander" style="width: 100%; height: 198px; object-fit: cover; border-radius: 8px; cursor: zoom-in;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            </div>
           </div>
-          <div class='exp-card' data-aos='fade-up' data-aos-delay='400'>
-            <div class='exp-card-header'>
-              <div class='exp-card-icon' style='background: var(--gradient-accent)'><i class='fas fa-trophy'/></div>
+
+          <!-- Tahya Misr / Ministry of Youth & Sports Shield -->
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: linear-gradient(135deg, var(--gold), #ffaa00);"><i class="fas fa-star"/></div>
               <div>
-                <h4 class='exp-card-title'><span class='lang-en'>Misr El Kheir &amp; ExxonMobil Award</span><span class='lang-ar'>جائزة مصر الخير &amp; ExxonMobil</span></h4>
-                <p class='exp-card-org'><span class='lang-en'>GESR SaaS Competition</span><span class='lang-ar'>مسابقة GESR للـ SaaS</span></p>
+                <h4 class="exp-card-title"><span class="lang-en">Shield of Excellence &#8212; Ministry of Youth &amp; Sports</span><span class="lang-ar">درع الشكر والتقدير &#8212; وزارة الشباب والرياضة</span></h4>
+                <p class="exp-card-org"><span class="lang-en">Under Auspices of Dr. Ashraf Sobhy &amp; Tahya Misr</span><span class="lang-ar">تحت رعاية وزير الشباب والرياضة واتحاد طلاب تحيا مصر</span></p>
               </div>
             </div>
-            <p class='exp-card-desc'><span class='lang-en'>Winning the award for Merkato B2B Industrial Platform.</span><span class='lang-ar'>الفوز بالجائزة عن منصة Merkato للتداول الصناعي B2B.</span></p>
+            <p class="exp-card-desc"><span class="lang-en">Honored for exceptional impact in community development, national capacity building programs, and empowering students and young engineers across Egyptian universities.</span><span class="lang-ar">درع تكريم رسمي للبصمة المتميزة في العمل العام والتنمية المجتمعية وتدريب وتأهيل شباب المهندسين وطلاب الجامعات المصرية.</span></p>
+            <div class="exp-card-media" style="margin-top: 14px; border-radius: 12px; overflow: hidden; border: 1px solid rgba(255,255,255,0.12); background: rgba(0,0,0,0.4); box-shadow: 0 8px 24px rgba(0,0,0,0.5);">
+              <img src="https://i.ibb.co/JW8mPfbK/shield-tahya-misr.jpg" alt="Ministry of Youth and Sports Shield" style="width: 100%; height: 210px; object-fit: contain; background: #0b0f19; cursor: zoom-in; transition: transform 0.3s ease;" onclick="if(window.openLightbox) window.openLightbox(this.src)" />
+            </div>
+          </div>
+
+          <!-- Misr El Kheir & ExxonMobil Award -->
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: var(--gradient-accent)"><i class="fas fa-trophy"/></div>
+              <div>
+                <h4 class="exp-card-title"><span class="lang-en">Misr El Kheir &amp; ExxonMobil SaaS Award</span><span class="lang-ar">جائزة مؤسسة مصر الخير وExxonMobil للـ SaaS</span></h4>
+                <p class="exp-card-org"><span class="lang-en">GESR SaaS Competition Prize Winner</span><span class="lang-ar">المركز الأول في مسابقة جسر لحلول الـ SaaS والتحول الرقمي</span></p>
+              </div>
+            </div>
+            <p class="exp-card-desc"><span class="lang-en">Won the official innovation prize for engineering Merkato B2B Industrial Platform, digitizing industrial supply chains and spare parts trading across factories.</span><span class="lang-ar">الفوز بالجائزة الرسمية للابتكار عن تطوير وهندسة منصة Merkato لرقمنة سلاسل التوريد الصناعية وقطع الغيار للمصانع والشركات.</span></p>
+          </div>
+
+          <!-- Media Speaker -->
+          <div class="exp-card" data-aos="fade-up" data-aos-delay="600">
+            <div class="exp-card-header">
+              <div class="exp-card-icon" style="background: var(--gradient-primary)"><i class="fas fa-tv"/></div>
+              <div>
+                <h4 class="exp-card-title"><span class="lang-en">Media Tech Expert &#8212; Egyptian TV Networks</span><span class="lang-ar">متحدث ومستشار تقني &#8212; القنوات المصرية</span></h4>
+                <p class="exp-card-org"><span class="lang-en">Featured Speaker across 5+ TV &amp; Radio Channels</span><span class="lang-ar">ظهور دوري في القنوات الفضائية والإذاعات الوطنية</span></p>
+              </div>
+            </div>
+            <p class="exp-card-desc">Nile Cultural, Ten TV, Nile News, Channel 2, Radio Misr &#8212; <span class="lang-en">Guest expert explaining Applied AI, automated agents, cyber-physical workflows, and sovereign digital transformation.</span><span class="lang-ar">متحدث خبير في البرامج الحوارية لشرح تطبيقات الذكاء الاصطناعي، الروبوتات، والأتمتة وفرص التحول الرقمي للشباب والشركات.</span></p>
           </div>
         </div>
       </div>
@@ -5294,7 +5408,7 @@ iframe.blogger-iframe-colorize {
                   <p>+20 112 189 1913</p>
                 </div>
               </a>
-              <a class='contact-method' data-track='contact_linkedin_click' data-track-context='contact_methods' href='https://linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'>
+              <a class='contact-method' data-track='contact_linkedin_click' data-track-context='contact_methods' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'>
                 <div class='contact-method-icon contact-icon-linkedin'>
                   <i class='fab fa-linkedin-in'/>
                 </div>
@@ -5315,7 +5429,7 @@ iframe.blogger-iframe-colorize {
             </div>
 
             <div class='contact-social'>
-              <a class='social-link' href='https://linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank' title='Open LinkedIn profile'><i class='fab fa-linkedin-in'/></a>
+              <a class='social-link' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank' title='Open LinkedIn profile'><i class='fab fa-linkedin-in'/></a>
               <a class='social-link' href='https://github.com/ashshaban' rel='noopener noreferrer' target='_blank' title='Open GitHub profile'><i class='fab fa-github'/></a>
               <a class='social-link' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open X profile'><i class='fab fa-x-twitter'/></a>
               <a class='social-link' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank' title='Open Facebook profile'><i class='fab fa-facebook-f'/></a>
@@ -5461,7 +5575,7 @@ iframe.blogger-iframe-colorize {
                 <span class='lang-ar'>القنوات الشخصية (@msalatmani)</span>
               </h4>
               <div class='footer-social-icons'>
-                <a aria-label='Personal LinkedIn' class='footer-social-icon' href='https://linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'/></a>
+                <a aria-label='Personal LinkedIn' class='footer-social-icon' href='https://www.linkedin.com/in/mohamedshabanalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-linkedin-in'/></a>
                 <a aria-label='Personal GitHub' class='footer-social-icon' href='https://github.com/ashshaban' rel='noopener noreferrer' target='_blank'><i class='fab fa-github'/></a>
                 <a aria-label='Personal X' class='footer-social-icon' href='https://x.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-x-twitter'/></a>
                 <a aria-label='Personal Facebook' class='footer-social-icon' href='https://facebook.com/msalatmani' rel='noopener noreferrer' target='_blank'><i class='fab fa-facebook-f'/></a>

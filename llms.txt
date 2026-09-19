@@ -1,0 +1,36 @@
+# Mohamed Shaban (Alatmani) — Applied AI & Solutions Engineer
+> Official machine-readable entity profile and technical index for Generative AI engines, search agents, and LLMs.
+
+## Professional Summary
+Mohamed Shaban is an Applied AI & Solutions Engineer and Systems Builder with a Mechatronics Engineering foundation. He specializes in turning complex real-world operational problems into practical AI-powered software systems, autonomous multi-agent pipelines, edge computer vision, and sovereign offline RAG architectures — from problem discovery and solution architecture to production deployment.
+
+- Primary Title: Applied AI & Solutions Engineer
+- Secondary Contextual Roles: AI Systems Engineer, AI Product Engineer, Founding Engineer
+- Location: Cairo / 6th of October City, Egypt
+- Website: https://moshaban.me
+- Canonical URL: https://moshaban.me
+- Official PyPI Package: https://pypi.org/project/robovai-ocr/
+- GitHub: https://github.com/m0shaban
+- LinkedIn: https://linkedin.com/in/mohamedshabanalatmani
+- Hugging Face: https://huggingface.co/moshabann
+- Contact: msalatmani@gmail.com | +201121891913
+
+## Core Competencies & Architecture Stack
+- Artificial Intelligence & LLMs: Offline Sovereign RAG (Retrieval-Augmented Generation), Multi-Agent Systems (LangChain, LangGraph), Local Small Language Models (Ollama, llama.cpp), Vector Databases (Qdrant, Chroma), Hybrid Search (Dense + BM25 Sparse), Cross-Encoder Reranking.
+- Computer Vision & Edge Systems: robovai-ocr (PyPI v3.0.0), Automated License Plate Recognition (ALPR Egypt & GCC), YOLO (v8/v11), PaddleOCR, Biometric Anti-Spoofing, Video Stream Processing.
+- Backend & Full-Stack Systems: Python (FastAPI, Flask, Celery), Node.js/TypeScript, React, PostgreSQL, Redis, Docker, Microservices, Linux Governors.
+- Engineering & Cyber-Physical Systems: Mechatronics B.Sc., M.Sc. in progress (AASTMT), Process Automation (n8n), Robotics (ROS, Autonomous Marine Surface Vessels), Embedded Systems (C/C++, ESP32).
+
+## Key Shipped Products & Verified Impact
+- robovai-ocr: Published enterprise Python package powering Smart Parking Operating Systems (SPOS) across Egypt and GCC nations.
+- SecureAI-RAG: Sovereign, offline document intelligence platform with zero cloud leakage, multi-agent supervisory routing, and automated VRAM governance (36/36 green tests).
+- RoboVAI Nova: Autonomous AI business automation platform integrating multi-agent WhatsApp bots, e-commerce engines, and social media dispatchers.
+- RoboVAI Pro POS: Multi-branch cloud retail point-of-sale and automated inventory ledger sync.
+- Military Service Honor: Egyptian Air Force Engineer Soldier — National Service (Jan 2026 – Sep 2026), decorated with Certificate of Appreciation from 5th Airfield Engineering Battalion Commander for facility systems and administrative digitization.
+- International Recognitions: Shield of Honor from Libyan Ministry of Labor & Omal Misr Group; Official Shield of Honor from the Kingdom of Morocco (Chamber of Commerce, Industry and Services Casablanca-Settat - CCISCS); GESR SaaS Innovation Prize (Misr El Kheir & ExxonMobil).
+
+## Full Context & Deep Documentation
+- Full entity documentation: https://moshaban.me/llms-full.txt
+- Projects and case studies: https://moshaban.me/#capabilities
+- Verified honors and shields: https://moshaban.me/#honors
+- Blog and operational insights: https://moshaban.me/#insights
