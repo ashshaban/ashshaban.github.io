@@ -3674,6 +3674,269 @@ body {
   transform: scale(1.03) !important;
 }
 
+
+/* ==========================================================================
+   APPLE iOS 18 / macOS SEQUOIA APP LAUNCHER and DOCK DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. Dynamic Island / iOS Top Floating Pill Navbar */
+.navbar {
+  position: fixed !important;
+  top: 14px !important;
+  left: 0 !important;
+  right: 0 !important;
+  width: min(1140px, 94%) !important;
+  margin: 0 auto !important;
+  background: rgba(13, 18, 28, 0.78) !important;
+  backdrop-filter: blur(36px) saturate(220%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(220%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.13) !important;
+  border-radius: 999px !important;
+  box-shadow: inset 0 1px 1.5px rgba(255, 255, 255, 0.22), 0 16px 40px -10px rgba(0, 0, 0, 0.75) !important;
+  padding: 8px 18px !important;
+  z-index: 9999 !important;
+  transition: all 0.35s cubic-bezier(0.32, 0.72, 0, 1) !important;
+}
+
+.navbar.scrolled {
+  background: rgba(10, 14, 22, 0.92) !important;
+  border-color: rgba(56, 189, 248, 0.3) !important;
+  box-shadow: inset 0 1px 1.5px rgba(255, 255, 255, 0.25), 0 20px 45px -10px rgba(0, 0, 0, 0.85), 0 0 25px rgba(56, 189, 248, 0.15) !important;
+}
+
+.nav-container {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+/* Nav Logo Apple Pro Styling */
+.nav-logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+}
+
+.nav-brand-name {
+  font-weight: 700 !important;
+  font-size: 1.05rem !important;
+  color: #ffffff !important;
+  letter-spacing: -0.02em !important;
+}
+
+.nav-brand-title {
+  display: inline-flex !important;
+  align-items: center !important;
+  font-size: 0.74rem !important;
+  font-weight: 500 !important;
+  color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.1) !important;
+  border: 1px solid rgba(56, 189, 248, 0.25) !important;
+  border-radius: 999px !important;
+  padding: 3px 9px !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* iOS Segmented Nav Links */
+.nav-links {
+  display: flex !important;
+  align-items: center !important;
+  gap: 4px !important;
+  list-style: none !important;
+  background: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.06) !important;
+  border-radius: 999px !important;
+  padding: 4px 6px !important;
+}
+
+.nav-links li a {
+  font-size: 0.84rem !important;
+  font-weight: 500 !important;
+  color: #94a3b8 !important;
+  padding: 6px 14px !important;
+  border-radius: 999px !important;
+  transition: all 0.25s cubic-bezier(0.32, 0.72, 0, 1) !important;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+  color: #ffffff !important;
+  background: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* iOS Segmented Language Toggle */
+.lang-toggle-btn {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.16) !important;
+  border-radius: 999px !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  font-size: 0.8rem !important;
+  padding: 6px 14px !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 6px !important;
+  cursor: pointer !important;
+  transition: all 0.2s cubic-bezier(0.32, 0.72, 0, 1) !important;
+}
+
+.lang-toggle-btn:hover {
+  background: rgba(255, 255, 255, 0.18) !important;
+  transform: scale(1.04) !important;
+}
+
+.lang-toggle-btn:active {
+  transform: scale(0.96) !important;
+}
+
+/* 2. iOS Squircle Cards with Apple Haptic Press */
+.exp-card, .cert-card, .capability-card, .robovai-skill-card, .timeline-content, .service-box {
+  border-radius: 26px !important;
+  background: linear-gradient(145deg, rgba(22, 29, 45, 0.72) 0%, rgba(10, 15, 26, 0.85) 100%) !important;
+  backdrop-filter: blur(30px) saturate(200%) !important;
+  -webkit-backdrop-filter: blur(30px) saturate(200%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.18), inset 0 -1px 1px rgba(0, 0, 0, 0.3), 0 16px 40px -10px rgba(0, 0, 0, 0.7) !important;
+  transition: transform 0.35s cubic-bezier(0.32, 0.72, 0, 1), box-shadow 0.35s cubic-bezier(0.32, 0.72, 0, 1), border-color 0.3s ease !important;
+}
+
+.exp-card:active, .cert-card:active, .capability-card:active, .robovai-skill-card:active, .btn:active {
+  transform: scale(0.975) !important;
+}
+
+/* iOS App-Style Continuous Curvature for Icons */
+.exp-card-icon, .cert-icon, .feature-icon, .contact-method-icon {
+  border-radius: 22.5% !important;
+}
+
+/* 3. Apple iOS / macOS Floating Launcher Dock */
+.ios-dock-wrapper {
+  position: fixed !important;
+  bottom: 22px !important;
+  left: 0 !important;
+  right: 0 !important;
+  display: flex !important;
+  justify-content: center !important;
+  z-index: 9998 !important;
+  pointer-events: none !important;
+}
+
+.ios-dock {
+  pointer-events: auto !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 10px 16px !important;
+  background: rgba(15, 21, 35, 0.8) !important;
+  backdrop-filter: blur(36px) saturate(220%) !important;
+  -webkit-backdrop-filter: blur(36px) saturate(220%) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 999px !important;
+  box-shadow: inset 0 1px 1.5px rgba(255, 255, 255, 0.25), 0 20px 50px -10px rgba(0, 0, 0, 0.8) !important;
+  transition: all 0.35s cubic-bezier(0.32, 0.72, 0, 1) !important;
+}
+
+.ios-dock-item {
+  position: relative !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-decoration: none !important;
+  transition: transform 0.25s cubic-bezier(0.32, 0.72, 0, 1) !important;
+}
+
+.ios-dock-item:hover {
+  transform: translateY(-8px) scale(1.18) !important;
+}
+
+.ios-dock-item:active {
+  transform: translateY(-2px) scale(0.96) !important;
+}
+
+.ios-dock-icon {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 12px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.15rem !important;
+  color: #ffffff !important;
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.3), 0 4px 12px rgba(0, 0, 0, 0.4) !important;
+}
+
+.icon-home { background: linear-gradient(135deg, #38bdf8 0%, #1d4ed8 100%) !important; }
+.icon-capabilities { background: linear-gradient(135deg, #a855f7 0%, #6d28d9 100%) !important; }
+.icon-robovai { background: linear-gradient(135deg, #ec4899 0%, #be185d 100%) !important; }
+.icon-experience { background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%) !important; }
+.icon-certs { background: linear-gradient(135deg, #10b981 0%, #047857 100%) !important; }
+.icon-honors { background: linear-gradient(135deg, #f59e0b 0%, #b45309 100%) !important; }
+.icon-message { background: linear-gradient(135deg, #06b6d4 0%, #0e7490 100%) !important; }
+
+.ios-dock-divider {
+  width: 1px !important;
+  height: 28px !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  margin: 0 4px !important;
+}
+
+.ios-dock-dot {
+  width: 4px !important;
+  height: 4px !important;
+  border-radius: 50% !important;
+  background: #38bdf8 !important;
+  margin-top: 4px !important;
+  opacity: 0 !important;
+  transition: opacity 0.2s ease !important;
+}
+
+.ios-dock-item:hover .ios-dock-dot, .ios-dock-item.active .ios-dock-dot {
+  opacity: 1 !important;
+}
+
+/* Tooltip on hover (macOS style) */
+.ios-dock-item::before {
+  content: attr(data-tooltip);
+  position: absolute !important;
+  bottom: 58px !important;
+  white-space: nowrap !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  color: #ffffff !important;
+  background: rgba(10, 14, 22, 0.88) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  padding: 4px 10px !important;
+  border-radius: 8px !important;
+  pointer-events: none !important;
+  opacity: 0 !important;
+  transform: translateY(4px) scale(0.92) !important;
+  transition: all 0.2s cubic-bezier(0.32, 0.72, 0, 1) !important;
+}
+
+.ios-dock-item:hover::before {
+  opacity: 1 !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Responsive adjustment for Mobile */
+@media (max-width: 768px) {
+  .ios-dock {
+    gap: 8px !important;
+    padding: 8px 12px !important;
+  }
+  .ios-dock-icon {
+    width: 36px !important;
+    height: 36px !important;
+    font-size: 0.95rem !important;
+    border-radius: 10px !important;
+  }
+  .nav-brand-title {
+    display: none !important;
+  }
+}
+
 </style>
 
 
@@ -3849,17 +4112,12 @@ body {
               <b:widget-setting name='imagePlacement'>BEHIND</b:widget-setting>
               <b:widget-setting name='displayWidth'>0</b:widget-setting>
             </b:widget-settings>
-            <b:includable id='main'>
-        <b:if cond='data:useImage'>
+            <b:includable id="main">
           <a class='nav-logo' expr:href='data:blog.homepageUrl'>
-            <img expr:alt='data:title' expr:src='data:image' style='max-height: 40px; width: auto;' referrerpolicy="no-referrer"/>
+            <span class='nav-brand-name'>Mohamed Shaban</span>
+            <span class='nav-brand-title'><span class='lang-en'>Applied AI &amp; Solutions Engineer</span><span class='lang-ar'>مهندس حلول وذكاء اصطناعي تطبيقي</span></span>
           </a>
-        <b:else/>
-          <a class='nav-logo' expr:href='data:blog.homepageUrl'>
-            <data:title/>
-          </a>
-        </b:if>
-      </b:includable>
+        </b:includable>
             <b:includable id='behindImageStyle'>
     <b:if cond='data:sourceUrl'>
       <b:include cond='data:this.image' data='{                    image: data:this.image,                    selector: &quot;.header-widget&quot;                  }' name='responsiveImageStyle'/>
@@ -3963,7 +4221,7 @@ body {
           <div class='hero-content' data-aos='fade-up'>
             <div class='hero-badge'>
               <i class='fas fa-microchip'></i>
-              <span class='lang-en'>Applied AI Engineer &amp; Technical Product Builder</span><span class='lang-ar'>مهندس ذكاء اصطناعي تطبيقي ومطور منتجات تقنية 🚀</span>
+              <span class='lang-en'>Applied AI Engineer &amp; Technical Product Builder</span><span class='lang-ar'>مهندس حلول وذكاء اصطناعي تطبيقي</span>
             </div>
             <h1 class='hero-title'>
               <span class='lang-en'>I Build Intelligent Products.<br/>
@@ -6061,7 +6319,7 @@ body {
           <div class='footer-logo'>msalatmani.org</div>
           <p class='footer-text'>
             <span class='lang-en'>&amp;copy; 2026 Mohamed Shaban. Applied AI Engineer &amp; Technical Product Builder.</span>
-            <span class='lang-ar'>&amp;copy; 2026 محمد شعبان. مهندس ذكاء اصطناعي تطبيقي ومطور منتجات تقنية 🚀</span>
+            <span class='lang-ar'>&amp;copy; 2026 محمد شعبان. مهندس حلول وذكاء اصطناعي تطبيقي</span>
           </p>
           <div class='footer-links'>
             <a href='/'><span class='lang-en'>Home</span><span class='lang-ar'>الرئيسية</span></a>
@@ -7170,6 +7428,44 @@ window.addEventListener('load', function() {
   });
 })();
 </script>
+
+
+<!-- ==========================================================================
+     APPLE iOS / macOS FLOATING APP LAUNCHER DOCK
+     ========================================================================== -->
+<div class="ios-dock-wrapper" id="iosDock">
+  <div class="ios-dock">
+    <a href="#home" class="ios-dock-item" data-tooltip="Home" aria-label="Home">
+      <div class="ios-dock-icon icon-home"><i class="fas fa-home"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+    <a href="#capabilities" class="ios-dock-item" data-tooltip="Capabilities" aria-label="Capabilities">
+      <div class="ios-dock-icon icon-capabilities"><i class="fas fa-bolt"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+    <a href="#robovai" class="ios-dock-item" data-tooltip="RoboVAI" aria-label="RoboVAI">
+      <div class="ios-dock-icon icon-robovai"><i class="fas fa-robot"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+    <a href="#experience" class="ios-dock-item" data-tooltip="Career" aria-label="Experience">
+      <div class="ios-dock-icon icon-experience"><i class="fas fa-briefcase"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+    <a href="#certifications" class="ios-dock-item" data-tooltip="Credentials" aria-label="Certifications">
+      <div class="ios-dock-icon icon-certs"><i class="fas fa-certificate"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+    <a href="#honors" class="ios-dock-item" data-tooltip="Honors" aria-label="Honors">
+      <div class="ios-dock-icon icon-honors"><i class="fas fa-shield-alt"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+    <div class="ios-dock-divider"></div>
+    <a href="#contact" class="ios-dock-item ios-dock-cta" data-tooltip="Message" aria-label="Contact">
+      <div class="ios-dock-icon icon-message"><i class="fas fa-paper-plane"></i></div>
+      <span class="ios-dock-dot"></span>
+    </a>
+  </div>
+</div>
 
 </body>
 </html>
