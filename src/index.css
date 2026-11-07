@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', 'Cairo', system-ui, -apple-system, sans-serif;
+    --font-sans: 'Cairo', 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-cairo: 'Cairo', sans-serif;
+    --font-mono: 'JetBrains Mono', monospace;
+    --alia-orange: #E06D2B;
+    --alia-amber: #F39C3D;
+    --alia-dark: #0C0C0E;
+  }
+
+  html, body {
+    font-family: var(--font-sans);
+    background-color: #0C0C0E;
+    color: #F8FAFC;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-cairo {
+    font-family: var(--font-cairo);
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Luxury Frosted Glassmorphism System */
+.glass-shell {
+  background: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.10) 0%,
+    rgba(255, 255, 255, 0.04) 50%,
+    rgba(24, 24, 27, 0.65) 100%
+  );
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow:
+    0 28px 64px -12px rgba(0, 0, 0, 0.75),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 0 0 rgba(255, 255, 255, 0.05);
+}
+
+.glass-panel {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.085) 0%,
+    rgba(255, 255, 255, 0.03) 100%
+  );
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 8px 24px -4px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.16);
+}
+
+.glass-panel-hover:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.13) 0%,
+    rgba(224, 109, 43, 0.08) 100%
+  );
+  border-color: rgba(224, 109, 43, 0.45);
+}
+
+.glass-pill-btn {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.2);
+}
+
+.glass-orange-cta {
+  background: linear-gradient(
+    135deg,
+    rgba(224, 109, 43, 0.92) 0%,
+    rgba(201, 93, 32, 0.85) 100%
+  );
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow:
+    0 12px 28px -6px rgba(224, 109, 43, 0.5),
+    inset 0 1px 0 0 rgba(255, 255, 255, 0.35);
+}
+
+/* 3D Card Flip Perspective & Smooth Hardware-Accelerated Transition */
+.perspective-stage {
+  perspective: 1600px;
+}
+
+.flip-card-inner {
+  transform-style: preserve-3d;
+  transition: transform 0.68s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: transform;
+}
+
+.flip-card-inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.card-face-back {
+  transform: rotateY(180deg);
+}
+
+/* Subtle Corporate Pulse Animations for Primary CTA & 3D Flip Trigger */
+@keyframes subtle-cta-pulse {
+  0%, 100% {
+    box-shadow:
+      0 12px 28px -6px rgba(224, 109, 43, 0.5),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.35),
+      0 0 0 0 rgba(224, 109, 43, 0.45);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow:
+      0 12px 28px -6px rgba(224, 109, 43, 0.6),
+      inset 0 1px 0 0 rgba(255, 255, 255, 0.45),
+      0 0 0 7px rgba(224, 109, 43, 0);
+    transform: scale(1.012);
+  }
+}
+
+@keyframes subtle-flip-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(243, 156, 61, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 6px rgba(243, 156, 61, 0);
+  }
+}
+
+.animate-cta-pulse {
+  animation: subtle-cta-pulse 2.6s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.animate-flip-pulse {
+  animation: subtle-flip-pulse 2.8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-cta-pulse,
+  .animate-flip-pulse {
+    animation: none;
+  }
+}

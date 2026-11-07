@@ -1,0 +1,6 @@
+{
+  "name": "ALIA Strategic Consulting — Smart Digital Business Card",
+  "description": "Smart Digital Business Card & Executive Profile for ALIA Strategic Consulting (An Amer Vision Group Company) featuring vCard export, QR pass, and interactive revenue engines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
